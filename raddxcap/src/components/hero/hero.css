@@ -1,0 +1,18 @@
+.hero-img{
+    width: 100vw;
+    margin-top: -10%;
+}
+
+.txt-container{
+    margin-left: 10%;
+    margin-top: -15%;
+}
+
+.hero-title{
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.hero-txt{
+    font-size: large;
+}
