@@ -1,0 +1,84 @@
+.carCarousel {
+    margin-left: 20px;
+  }
+  
+  @media (min-width: 768px) {
+    .innerCar {
+      display: flex;
+      overflow-x: hidden;
+      max-width: 1000px;
+    }
+  
+    .carItem {
+      margin-right: 0;
+      flex: 0 0 33.333333%;
+      display: block;
+      padding: 10px;
+    }
+  }
+  
+  .carItem {
+    max-width: 350px;
+    transition: 1s cubic-bezier(0.39, 0.575, 0.565, 1)
+  }
+  
+  .carets {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+  }
+  
+  .carControlPrev,
+  .carControlNext {
+    width: 40px !important;
+    background-color: transparent;
+    border-color: transparent;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .carControlNext {
+    margin-left: 1000px;
+    color: rgba(0, 0, 0, 0.336)
+  }
+  
+  .carControlPrev {
+    margin-left: -35px;
+    color: rgba(0, 0, 0, 0.336)
+  }
+  
+  
+  .carCard {
+    height: 515px;
+  }
+  
+  .carImgContainer {
+    max-width: 250px;
+    max-height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: 100%;
+  }
+  
+  .carImg {
+    padding: 15px;
+  }
+  
+  .carBody {
+    padding: 15px;
+    padding-bottom: 10px;
+    position: absolute;
+    margin-top: 270px;
+  }
+  
+  .carText {
+    color: black !important;
+  }
+  
+  .carTitle {
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    margin-top: auto;
+  }
