@@ -16,6 +16,7 @@ function App() {
       <Hero/>
       <AboutMe/>
       <Mid/>
+      <Projects/>
     </div>
   );
 }
