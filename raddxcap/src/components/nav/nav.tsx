@@ -14,9 +14,9 @@ export default function nav() {
           <img src={logo} className='logo-img'/>
         </a>
         <div className='justify-content-end d-flex'>
-            <Nav.Link href='#about' className='nav-items'>About</Nav.Link>
-            <Nav.Link href='#projects' className='nav-items'>Projects</Nav.Link>
-            <Nav.Link href='#contacts' className='nav-items'>Contacts</Nav.Link>
+            <Nav.Link href='#about' className='nav-items pavanam'>About</Nav.Link>
+            <Nav.Link href='#projects' className='nav-items pavanam'>Projects</Nav.Link>
+            <Nav.Link href='#contacts' className='nav-items pavanam'>Contacts</Nav.Link>
         </div>
       </Container>
     </Navbar>
