@@ -8,10 +8,16 @@ export default function hero() {
   return (
     <div style={{ color: 'white' }} className='mb-5'>
       <img src={heroimg} className='hero-img' />
-      <Container>
-        <Row className='txt-container'>
+      <Container className='txt-container'>
+        <Row>
+          <Col className='col-6'>
           <p className='hero-title lato'>RaddxCap Investments</p>
+          </Col>
+        </Row>
+        <Row>
+          <Col className='col-6'>
           <p className='hero-txt lato'>Real Estate Solutions for Real Investors</p>
+          </Col>
         </Row>
       </Container>
     </div>

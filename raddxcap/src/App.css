@@ -6,3 +6,7 @@
 .pavanam{
     font-family: 'Pavanam', sans-serif;
 }
+
+hr{
+max-width: 400px;
+}

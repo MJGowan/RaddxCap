@@ -1,3 +1,24 @@
-.midBgImg{
+.midBgImg {
     width: 100vw;
+}
+
+.mid-items{
+margin-top: -33%;
+}
+
+.becky {
+    border-color: #273237;
+    border-width: 2px;
+    padding: 5px;
+    background-color: #273237;
+    border-radius: 5px;
+}
+
+.dark-box-txt {
+    margin-top: 15%;
+    background-color: #283542;
+    color: white;
+    padding: 40px;
+    border-radius: 5px;
+    font-size: 25px
 }
