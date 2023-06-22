@@ -44,6 +44,7 @@
 
 .carCard {
   height: 515px;
+  background-color: #273237;
 }
 
 .carImgContainer {
@@ -67,7 +68,7 @@
 }
 
 .carText {
-  color: black !important;
+  color: white;
 }
 
 .carTitle {
