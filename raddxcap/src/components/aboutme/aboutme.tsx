@@ -9,11 +9,9 @@ export default function aboutme() {
       <Container className='aboutMe mb-5'>
       <Row>
         <p className='pavanam aboutMeTitle'>About Me</p>
-        <Col>
         <hr className='hrLength'/>
-        </Col>
+
         <p className='lato'>{aboutMeTxt}</p>
-        <p className='lato'></p>
       </Row>
     </Container>
     </div>

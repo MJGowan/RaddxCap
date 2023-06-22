@@ -1,84 +1,169 @@
+.projects{
+  color: black;
+  margin-top: 20vh;
+}
+
+.projectsTitle{
+  font-size: 35px;
+}
+
 .carCarousel {
-    margin-left: 20px;
-  }
-  
-  @media (min-width: 768px) {
-    .innerCar {
-      display: flex;
-      overflow-x: hidden;
-      max-width: 1000px;
-    }
-  
-    .carItem {
-      margin-right: 0;
-      flex: 0 0 33.333333%;
-      display: block;
-      padding: 10px;
-    }
-  }
-  
-  .carItem {
-    max-width: 350px;
-    transition: 1s cubic-bezier(0.39, 0.575, 0.565, 1)
-  }
-  
-  .carets {
+  margin-left: 100px;
+  margin-top: 5vh;
+}
+
+.carItem {
+  max-width: 350px;
+  transition: 1s cubic-bezier(0.39, 0.575, 0.565, 1)
+}
+
+.carets {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+}
+
+.carControlPrev,
+.carControlNext {
+  width: 40px !important;
+  background-color: transparent !important;
+  border-color: transparent !important;
+  position: absolute;
+  z-index: 1;
+}
+
+.carControlNext {
+  color: rgba(0, 0, 0, 0.336)
+}
+
+.carControlPrev {
+  margin-left: -35px;
+  color: rgba(0, 0, 0, 0.336)
+}
+
+
+.carCard {
+  height: 515px;
+}
+
+.carImgContainer {
+  max-width: 250px;
+  max-height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: 100%;
+}
+
+.carImg {
+  padding: 15px;
+}
+
+.carBody {
+  padding: 15px;
+  padding-bottom: 10px;
+  position: absolute;
+  margin-top: 270px;
+}
+
+.carText {
+  color: black !important;
+}
+
+.carTitle {
+  text-align: center;
+  font-size: large;
+  font-weight: bold;
+  margin-top: auto;
+}
+
+@media (min-width: 1200px) {
+  .innerCar {
     display: flex;
-    flex-direction: row;
-    margin: auto;
+    overflow-x: hidden;
+    max-width: 1000px;
   }
-  
-  .carControlPrev,
-  .carControlNext {
-    width: 40px !important;
-    background-color: transparent;
-    border-color: transparent;
-    position: absolute;
-    z-index: 1;
+
+  .carItem {
+    margin-right: 0;
+    flex: 0 0 33.333333%;
+    display: block;
+    padding: 10px;
   }
-  
+
   .carControlNext {
     margin-left: 1000px;
-    color: rgba(0, 0, 0, 0.336)
   }
-  
-  .carControlPrev {
-    margin-left: -35px;
-    color: rgba(0, 0, 0, 0.336)
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .carCarousel {
+    margin-right: 8vw;
+    margin-left: 6vw;
   }
-  
-  
-  .carCard {
-    height: 515px;
+
+  .innerCar {
+    display: flex;
+    overflow-x: hidden;
+    max-width: 700px;
   }
-  
-  .carImgContainer {
-    max-width: 250px;
-    max-height: 200px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
-    margin-bottom: 100%;
+
+  .carItem {
+    flex: 0 0 50%;
+    display: block;
+    padding: 5px;
   }
-  
-  .carImg {
-    padding: 15px;
+
+  .carControlNext {
+    margin-left: 700px;
   }
-  
-  .carBody {
-    padding: 15px;
-    padding-bottom: 10px;
-    position: absolute;
-    margin-top: 270px;
+}
+
+@media (max-width: 1000px) {
+  .carCarousel {
+    margin-right: 10vw;
+    margin-left: 17vw;
   }
-  
-  .carText {
-    color: black !important;
+
+  .innerCar {
+    display: flex;
+    overflow-x: hidden;
+    max-width: 350px;
   }
-  
-  .carTitle {
-    text-align: center;
-    font-size: large;
-    font-weight: bold;
-    margin-top: auto;
+
+  .carItem {
+    flex: 0 0 100%;
+    display: block;
+    padding: 10px;
   }
+
+  .carControlNext {
+    margin-left: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  .carCarousel {
+    margin-right: 0px;
+    margin-left:-15px;
+  }
+
+  .innerCar {
+    display: flex;
+    overflow-x: hidden;
+    max-width: 350px;
+  }
+
+  .carItem {
+    flex: 0 0 100%;
+    display: block;
+    padding: 10px;
+  }
+
+  .carControlNext {
+    margin-left:330px;
+  }
+  .carControlPrev{
+    margin-left: -20px
+  }
+}

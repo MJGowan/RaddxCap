@@ -1,77 +1,84 @@
 import React, { useState, useEffect } from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import {Container, Row, Col} from 'react-bootstrap';
 import CaretPrev from '@mui/icons-material/ArrowBackIos';
 import CaretNext from '@mui/icons-material/ArrowForwardIos';
+import './projects.css';
 
 export default function Projects() {
+
+  const img1 = require('../../assets/House1.png');
+  const img2 = require('../../assets/House2.png');
 
   const properties = [
       {
         id: 1,
         desc: 'hiiiiiiiiii',
-        imageUrl: '../../assets/House 1.png',
+        imageUrl: img1,
         webUrl: ''
       },
       {
         id: 2,
         desc: 'HEY HEY HEY HEY',
-        imageUrl: '../../assets/House 2.png',
+        imageUrl: img2,
         webUrl: ''
       },
       {
         id: 3,
         desc: 'whoa',
-        imageUrl: '/assets/House 1.png',
+        imageUrl: img1,
         webUrl: ''
       },
       {
         id: 4,
         desc: 'WHOA THERE',
-        imageUrl: '/assets/House 2.png',
+        imageUrl: img2,
         webUrl: ''
       },
       {
         id: 5,
-        desc: '',
-        imageUrl: '',
+        desc: 'hi again',
+        imageUrl: img1,
         webUrl: ''
       },
       {
         id: 6,
-        desc: '',
-        imageUrl: '',
+        desc: 'ugh',
+        imageUrl: img2,
         webUrl: ''
       }
     ];
 
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const length = properties.length;
-  const carouselInfiniteScroll = () => {
-      if (currentIndex >= length - 3) {
-          return setCurrentIndex(0);
-      }
-      return setCurrentIndex(currentIndex + 1)
-  }
-  useEffect(() => {
-      const interval = setInterval(() => { carouselInfiniteScroll() }, 5000);
-      return () => clearInterval(interval);
-  })
-  const scrollPrev = () => {
-      const newIndex = currentIndex - 1;
-      setCurrentIndex(newIndex < 0 ? length - 3 : newIndex)
-  }
-  const scrollNext = () => {
-      const newIndex = currentIndex + 1;
-      setCurrentIndex(newIndex >= length - 2 ? 0 : newIndex)
-  }
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const length = properties.length;
+    const carouselInfiniteScroll = () => {
+        if (currentIndex >= length - 3) {
+            return setCurrentIndex(0);
+        }
+        return setCurrentIndex(currentIndex + 1)
+    }
+    useEffect(() => {
+        const interval = setInterval(() => { carouselInfiniteScroll() }, 5000);
+        return () => clearInterval(interval);
+    })
+    const scrollPrev = () => {
+        const newIndex = currentIndex - 1;
+        setCurrentIndex(newIndex < 0 ? length - 3 : newIndex)
+    }
+    const scrollNext = () => {
+        const newIndex = currentIndex + 1;
+        setCurrentIndex(newIndex >= length - 2 ? 0 : newIndex)
+    }
+
 
   return (
-    <div>
+    <Container className='projects'>
+      <p className='lato projectsTitle'>Projects</p>
+      <hr className='hrLength'/>
       <div id="carouselExampleControls" className='carCarousel slide mb-5' data-bs-ride="carousel">
         <div className='innerCar'>
           <div className='carets'>
             <button className='carControlPrev' type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev" onClick={scrollPrev}>
-              <CaretPrev/>
+              <CaretPrev className='carControlPrev'/>
             </button>
             <button className='carControlNext' type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next" onClick={scrollNext}>
               <CaretNext/>
@@ -83,7 +90,7 @@ export default function Projects() {
               <div key={property.id} className='carItem' style={{ transform: `translate(-${currentIndex * 100}%)` }}>
                 <div className='carCard card'>
                   <a href={property.webUrl} className='carImgContainer'>
-                    <img src={property.imageUrl} className='d-block w-100 carImg' />
+                    <img src={property.imageUrl} className='d-block w-100 carImg' alt={property.desc}/>
                   </a>
                   <div className='carBody'>
                     <p className='card-text carText'>{property.desc}</p>
@@ -95,6 +102,6 @@ export default function Projects() {
 
         </div>
       </div>
-    </div>
+    </Container>
   )
 }
