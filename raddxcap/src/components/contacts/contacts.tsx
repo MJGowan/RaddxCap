@@ -9,14 +9,14 @@ function ContactForm() {
     return <p>Thanks for reaching out!</p>;
   }
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className='lato'>
       <Container>
-      <Row>
+      <Row className='mb-2'>
         <label htmlFor="email">
           Email Address
         </label>
       </Row>
-      <Row>
+      <Row className='mb-3'>
         <input
           id="email"
           type="email"
@@ -29,8 +29,7 @@ function ContactForm() {
           errors={state.errors}
         />
       </Row>
-      <br/>
-      <Row>
+      <Row className='mb-3'>
         <textarea
           id="message"
           name="message"
@@ -42,7 +41,6 @@ function ContactForm() {
           errors={state.errors}
         />
       </Row>
-      <br/>
       <Row>
         <Col className='d-flex justify-content-end'>
         <button type="submit" disabled={state.submitting} className='submitBtn'>
