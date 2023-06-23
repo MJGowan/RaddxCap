@@ -5,7 +5,7 @@ import { Navbar, Container, Nav, Row, Col } from 'react-bootstrap'
 export default function nav() {
   const logo = require('../../assets/Logo.png')
   return (
-    <div>
+    <div style={{width: '100vw'}}>
       <Row>
         <Navbar className='bg nav' expand="lg" sticky="top">
           <Container>

@@ -17,6 +17,7 @@ function App() {
       <AboutMe/>
       <Mid/>
       <Projects/>
+      <Contacts/>
     </div>
   );
 }
