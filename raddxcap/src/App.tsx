@@ -18,6 +18,7 @@ function App() {
       <Mid/>
       <Projects/>
       <Contacts/>
+      <Footer/>
     </div>
   );
 }

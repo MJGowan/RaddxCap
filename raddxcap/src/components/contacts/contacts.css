@@ -19,7 +19,7 @@ margin-right: 15px;
 }
 
 .formContainer{
-    padding: 15px;
+    padding: 30px;
     background-color: #273237;
     border-radius: 10px;
     color: white;
@@ -29,14 +29,14 @@ margin-right: 15px;
 .emailInput{
 border-radius: 3px;
 border-color: transparent;
-width: 20vw;
+width: 15vw;
 margin-left: 5px;
 }
 
 .messageInput{
 border-radius: 5px;
-width: 30vw;
-height: 150px;
+width: 31vw;
+height: 125px;
 margin-left: 5px;
 }
 
