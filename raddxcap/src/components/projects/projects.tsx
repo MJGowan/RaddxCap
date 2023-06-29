@@ -72,7 +72,7 @@ export default function Projects() {
 
   return (
     <Container className='projects'>
-      <p className='lato projectsTitle'>Projects</p>
+      <p className='section-title'>Projects</p>
       <hr className='hrLength'/>
       <div id="carouselExampleControls" className='carCarousel slide mb-5' data-bs-ride="carousel">
         <div className='innerCar'>

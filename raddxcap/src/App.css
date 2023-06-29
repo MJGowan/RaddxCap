@@ -10,3 +10,28 @@
 hr{
 max-width: 400px;
 }
+
+.bg-img{
+    width: 100vw;
+}
+
+.section-title{
+    font-family: 'Pavanam', sans-serif;
+    font-size: 35px;
+}
+
+@media (max-width: 768px) {
+    
+}
+
+@media (min-width: 768px) and (max-width: 1000px) {
+    
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+    
+}
+
+@media (min-width: 1200px) {
+    
+}

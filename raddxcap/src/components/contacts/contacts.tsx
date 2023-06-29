@@ -67,7 +67,7 @@ export default function contacts() {
       <img src={bgImg} className='contactBgImg' />
       <Container>
         <div className='titleContainer'>
-          <p className='lato contactsTitle'>Contacts</p>
+          <p className='section-title'>Contacts</p>
           <hr className='hrLength' />
         </div>
         <Row>

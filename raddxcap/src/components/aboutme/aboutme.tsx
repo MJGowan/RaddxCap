@@ -8,9 +8,8 @@ export default function aboutme() {
     <div>
       <Container className='aboutMe mb-5'>
       <Row>
-        <p className='pavanam aboutMeTitle'>About Me</p>
+        <p className='section-title'>About Me</p>
         <hr className='hrLength'/>
-
         <p className='lato'>{aboutMeTxt}</p>
       </Row>
     </Container>

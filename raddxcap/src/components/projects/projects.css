@@ -1,10 +1,6 @@
-.projects{
+.projects {
   color: black;
   margin-top: 20vh;
-}
-
-.projectsTitle{
-  font-size: 35px;
 }
 
 .carCarousel {
@@ -78,24 +74,56 @@
   margin-top: auto;
 }
 
-@media (min-width: 1200px) {
+@media (max-width: 768px) {
+  .carCarousel {
+    margin-right: 0px;
+    margin-left: -15px;
+  }
+
   .innerCar {
     display: flex;
     overflow-x: hidden;
-    max-width: 1000px;
+    max-width: 350px;
   }
 
   .carItem {
-    margin-right: 0;
-    flex: 0 0 33.333333%;
+    flex: 0 0 100%;
     display: block;
     padding: 10px;
   }
 
   .carControlNext {
-    margin-left: 1000px;
+    margin-left: 330px;
+  }
+
+  .carControlPrev {
+    margin-left: -20px
   }
 }
+
+@media (min-width: 768px) and (max-width: 1000px) {
+  .carCarousel {
+    margin-right: 10vw;
+    margin-left: 17vw;
+  }
+
+  .innerCar {
+    display: flex;
+    overflow-x: hidden;
+    max-width: 350px;
+  }
+
+  .carItem {
+    flex: 0 0 100%;
+    display: block;
+    padding: 10px;
+  }
+
+  .carControlNext {
+    margin-left: 350px;
+  }
+}
+
 
 @media (min-width: 1000px) and (max-width: 1200px) {
   .carCarousel {
@@ -120,51 +148,21 @@
   }
 }
 
-@media (max-width: 1000px) {
-  .carCarousel {
-    margin-right: 10vw;
-    margin-left: 17vw;
-  }
-
+@media (min-width: 1200px) {
   .innerCar {
     display: flex;
     overflow-x: hidden;
-    max-width: 350px;
+    max-width: 1000px;
   }
 
   .carItem {
-    flex: 0 0 100%;
+    margin-right: 0;
+    flex: 0 0 33.333333%;
     display: block;
     padding: 10px;
   }
 
   .carControlNext {
-    margin-left: 350px;
-  }
-}
-
-@media (max-width: 768px) {
-  .carCarousel {
-    margin-right: 0px;
-    margin-left:-15px;
-  }
-
-  .innerCar {
-    display: flex;
-    overflow-x: hidden;
-    max-width: 350px;
-  }
-
-  .carItem {
-    flex: 0 0 100%;
-    display: block;
-    padding: 10px;
-  }
-
-  .carControlNext {
-    margin-left:330px;
-  }
-  .carControlPrev{
-    margin-left: -20px
+    margin-left: 1000px;
   }
 }

@@ -7,7 +7,7 @@ export default function hero() {
 
   return (
     <div style={{ color: 'white' }} className='mb-5'>
-      <img src={heroimg} className='hero-img' />
+      <img src={heroimg} className='bg-img hero-img' />
       <Container className='txt-container'>
         <Row>
           <Col className='col-6'>

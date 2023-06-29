@@ -1,9 +1,8 @@
 .footerContainer{
     padding-top: 30px;
     padding-left: 10px;
-    position: absolute;
     background-color: #283542;
     color: white;
-    width: 100vw;
-    margin-top: 10vh;
+    width: 101vw;
+    margin-top: 19vh;
 }
