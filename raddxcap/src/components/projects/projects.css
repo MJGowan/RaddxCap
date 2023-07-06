@@ -67,13 +67,6 @@
   color: white;
 }
 
-.carTitle {
-  text-align: center;
-  font-size: large;
-  font-weight: bold;
-  margin-top: auto;
-}
-
 @media (max-width: 768px) {
   .carCarousel {
     margin-right: 0px;
@@ -165,4 +158,30 @@
   .carControlNext {
     margin-left: 1000px;
   }
+}
+
+
+/* ADMIN */
+
+.innerCarAdmin {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 5%;
+}
+
+.carItemAdmin {
+  width: 350px;
+  padding: 5px;
+}
+
+.carBodyAdmin {
+  padding: 15px;
+  padding-bottom: 10px;
+  position: absolute;
+  margin-top: 270px;
+}
+
+.lightIcons{
+  color: white;
+
 }
