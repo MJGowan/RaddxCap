@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import './nav.css';
+import './navv.css';
 import { Navbar, Container, Nav, Row, Col } from 'react-bootstrap'
 
 export default function Navv() {

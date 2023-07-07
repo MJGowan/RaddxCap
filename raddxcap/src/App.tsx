@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Nav from './components/nav/nav';
+import Nav from './components/navv/navv';
 import Hero from './components/hero/hero';
 import AboutMe from './components/aboutme/aboutme';
 import Mid from './components/mid/mid';
