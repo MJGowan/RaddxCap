@@ -1,11 +1,15 @@
 .projects {
-  color: black;
   margin-top: 20vh;
 }
 
 .carCarousel {
   margin-left: 100px;
   margin-top: 5vh;
+}
+
+.innerCar {
+  display: flex;
+  overflow: hidden;
 }
 
 .carItem {
@@ -39,20 +43,19 @@
 
 
 .carCard {
-  height: 515px;
+  height: 475px;
   background-color: #273237;
 }
 
 .carImgContainer {
-  max-width: 250px;
-  max-height: 200px;
+  max-height: 220px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: auto;
-  margin-bottom: 100%;
+  margin-top: 0;
 }
 
 .carImg {
+  height: 220px;
   padding: 15px;
 }
 
@@ -67,6 +70,30 @@
   color: white;
 }
 
+/* ADMIN */
+
+.lightIcons {
+  color: white;
+}
+
+.innerCarAdmin {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.carItemAdmin {
+  padding: 5px;
+}
+
+.carBodyAdmin {
+  padding: 15px;
+  padding-bottom: 20px;
+  position: absolute;
+  margin-top: 215px;
+}
+
+/* MEDIA QUERIES */
+
 @media (max-width: 768px) {
   .carCarousel {
     margin-right: 0px;
@@ -74,8 +101,6 @@
   }
 
   .innerCar {
-    display: flex;
-    overflow-x: hidden;
     max-width: 350px;
   }
 
@@ -92,6 +117,17 @@
   .carControlPrev {
     margin-left: -20px
   }
+
+     /* ADMIN */
+
+     .innerCarAdmin {
+      padding-bottom: 5%;
+    }
+  
+    .carItemAdmin {
+      width: 300px;
+      padding: 5px;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 1000px) {
@@ -101,8 +137,6 @@
   }
 
   .innerCar {
-    display: flex;
-    overflow-x: hidden;
     max-width: 350px;
   }
 
@@ -115,6 +149,17 @@
   .carControlNext {
     margin-left: 350px;
   }
+
+   /* ADMIN */
+
+   .innerCarAdmin {
+    padding-bottom: 5%;
+  }
+
+  .carItemAdmin {
+    width: 300px;
+    padding: 5px;
+  }
 }
 
 
@@ -125,8 +170,6 @@
   }
 
   .innerCar {
-    display: flex;
-    overflow-x: hidden;
     max-width: 700px;
   }
 
@@ -139,12 +182,22 @@
   .carControlNext {
     margin-left: 700px;
   }
+
+  /* ADMIN */
+
+  .innerCarAdmin {
+    padding-bottom: 5%;
+  }
+
+  .carItemAdmin {
+    width: 300px;
+    padding: 5px;
+  }
+
 }
 
 @media (min-width: 1200px) {
   .innerCar {
-    display: flex;
-    overflow-x: hidden;
     max-width: 1000px;
   }
 
@@ -158,30 +211,16 @@
   .carControlNext {
     margin-left: 1000px;
   }
-}
 
+  /* ADMIN */
 
-/* ADMIN */
+  .innerCarAdmin {
+    padding-bottom: 5%;
+  }
 
-.innerCarAdmin {
-  display: flex;
-  flex-wrap: wrap;
-  padding-bottom: 5%;
-}
-
-.carItemAdmin {
-  width: 350px;
-  padding: 5px;
-}
-
-.carBodyAdmin {
-  padding: 15px;
-  padding-bottom: 10px;
-  position: absolute;
-  margin-top: 270px;
-}
-
-.lightIcons{
-  color: white;
+  .carItemAdmin {
+    width: 350px;
+    padding: 5px;
+  }
 
 }

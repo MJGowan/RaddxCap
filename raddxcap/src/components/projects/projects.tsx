@@ -94,7 +94,7 @@ export default function Projects() {
         adminOn ? (
           <div>
             <p className='section-title'>Projects <AddIcon onClick={handleShowAdd} /></p>
-            <hr/>
+            <hr />
             <div className='col-lg-12 mb-5'>
               <div className='innerCarAdmin'>
                 {
@@ -138,15 +138,19 @@ export default function Projects() {
                 <Modal.Title>Add Project</Modal.Title>
               </Modal.Header>
               <Modal.Body>
-                <Form.Group controlId="formFile" className="mb-3">
-                  <Form.Label>Default file input example</Form.Label>
+                <Form.Group className='mb-3'>
+                  <Form.Label>Link to Listing</Form.Label>
+                  <Form.Control id="basic-url" />
+                </Form.Group>
+                <Form.Group className="mb-3">
+                  <Form.Label>Image</Form.Label>
                   <Form.Control type="file" />
                 </Form.Group>
-                <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-                  <Form.Label>Example textarea</Form.Label>
+                <Form.Group className="mb-3">
+                  <Form.Label>Description</Form.Label>
                   <Form.Control as="textarea" rows={3} />
                 </Form.Group>
-                <Form.Check aria-label="option 1" label="Publish"/>
+                <Form.Check aria-label="Publish" label="Publish" />
               </Modal.Body>
               <Modal.Footer>
                 <Button variant="secondary" onClick={handleCloseAdd}>
@@ -168,18 +172,22 @@ export default function Projects() {
                 <Modal.Title>Edit Project</Modal.Title>
               </Modal.Header>
               <Modal.Body>
-                <Form.Group controlId="formFile" className="mb-3">
-                  <Form.Label>Default file input example</Form.Label>
+                <Form.Group className='mb-3'>
+                  <Form.Label>Link to Listing</Form.Label>
+                  <Form.Control id="basic-url" />
+                </Form.Group>
+                <Form.Group className="mb-3">
+                  <Form.Label>Image</Form.Label>
                   <Form.Control type="file" />
                 </Form.Group>
-                <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-                  <Form.Label>Example textarea</Form.Label>
+                <Form.Group className="mb-3">
+                  <Form.Label>Description</Form.Label>
                   <Form.Control as="textarea" rows={3} />
                 </Form.Group>
-                <Form.Check aria-label="option 1" label="Publish"/>
+                <Form.Check aria-label="Publish" label="Publish" />
               </Modal.Body>
               <Modal.Footer>
-                <Button variant="secondary" onClick={handleCloseEdit}>
+                <Button variant="secondary" onClick={handleCloseAdd}>
                   Cancel
                 </Button>
                 <Button variant="primary">Save</Button>
