@@ -6,7 +6,7 @@ export default function mid() {
   const bgImg = require('../../assets/Mid.png');
   const becky = require('../../assets/Mom.png');
   return (
-    <div>
+    <div id="mid">
       <img src={bgImg} className='bg-img'/>
       <Container className='mid-items'>
         <Row>
@@ -17,7 +17,7 @@ export default function mid() {
           </Col>
           <Col>
             <Container className='dark-box-txt'>
-              <p className='pavanam'>I am thrilled to be a part of this chapter of your life. I know that buying a home or property is one of the biggest decisions you may ever make, and I’m committed to helping you through this difficult process.</p>
+              <div className='pavanam'>I am thrilled to be a part of this chapter of your life. I know that buying a home or property is one of the biggest decisions you may ever make, and I’m committed to helping you through this difficult process.</div>
             </Container>
           </Col>
         </Row>
