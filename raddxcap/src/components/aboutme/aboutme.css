@@ -1,7 +1,39 @@
-.aboutMe{
-    padding-top: 5%;
-    padding-bottom: 3%;
+@media (max-width: 360px) {
+    .aboutMe{
+        margin-top: -20px;
+    }
 }
-.aboutMeTitle{
-    font-size: 35px;
+
+@media (min-width: 360px) and (max-width: 450px) {
+    .aboutMe{
+        padding-top: 2%;
+    }
+}
+
+@media (min-width: 450px) and (max-width: 620px) {
+    .aboutMe{
+        padding-top: 8%;
+    }
+}
+
+@media (min-width: 620px) and (max-width: 768px) {
+    .aboutMe{
+        padding-top: 13%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1000px) {
+
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+    .aboutMe{
+        padding-top: 2%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .aboutMe{
+        padding-top: 3%;
+    }  
 }

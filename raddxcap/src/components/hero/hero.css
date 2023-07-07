@@ -15,7 +15,7 @@
     text-align: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 500px) {
     .hero-img{
         margin-top: -5%;
     }
@@ -30,6 +30,25 @@
     
     .hero-txt{
         font-size: 15px;
+        margin-top: -3%;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 768px) {
+    .hero-img{
+        margin-top: -5%;
+    }
+    
+    .txt-container{
+        margin-top: -30%;
+    }
+    
+    .hero-title{
+        font-size:35px;
+    }
+    
+    .hero-txt{
+        font-size: 18px;
         margin-top: -3%;
     }
 }
