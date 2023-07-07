@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Button, Modal, Form } from 'react-bootstrap';
 import CaretPrev from '@mui/icons-material/ArrowBackIos';
 import CaretNext from '@mui/icons-material/ArrowForwardIos';
 import AddIcon from '@mui/icons-material/Add';
@@ -9,6 +9,20 @@ import './projects.css';
 
 export default function Projects() {
   const [adminOn, setAdminOn] = useState(true);
+
+
+  const [showAdd, setShowAdd] = useState(false);
+  const handleCloseAdd = () => setShowAdd(false);
+  const handleShowAdd = () => setShowAdd(true);
+
+  const [showEdit, setShowEdit] = useState(false);
+  const handleCloseEdit = () => setShowEdit(false);
+  const handleShowEdit = () => setShowEdit(true);
+
+  const [showDelete, setShowDelete] = useState(false);
+  const handleCloseDelete = () => setShowDelete(false);
+  const handleShowDelete = () => setShowDelete(true);
+
 
   const img1 = require('../../assets/House1.png');
   const img2 = require('../../assets/House2.png');
@@ -79,8 +93,8 @@ export default function Projects() {
       {
         adminOn ? (
           <div>
-            <p className='section-title'>Projects <AddIcon /></p>
-            <hr className='hrLength' />
+            <p className='section-title'>Projects <AddIcon onClick={handleShowAdd} /></p>
+            <hr/>
             <div className='col-lg-12 mb-5'>
               <div className='innerCarAdmin'>
                 {
@@ -96,12 +110,12 @@ export default function Projects() {
                           </Row>
                           <div className='lightIcons'>
                             <Row>
-                            <Col className='col-1'>
-                              <EditOutlinedIcon />
-                            </Col>
-                            <Col className='col-1'>
-                              <DeleteOutlineOutlinedIcon/>
-                            </Col>
+                              <Col className='col-1'>
+                                <EditOutlinedIcon onClick={handleShowEdit} />
+                              </Col>
+                              <Col className='col-1'>
+                                <DeleteOutlineOutlinedIcon onClick={handleShowDelete} />
+                              </Col>
                             </Row>
                           </div>
                         </div>
@@ -112,6 +126,88 @@ export default function Projects() {
 
               </div>
             </div>
+
+            {/* Add-Project Modal */}
+            <Modal
+              show={showAdd}
+              onHide={handleCloseAdd}
+              backdrop="static"
+              keyboard={false}
+            >
+              <Modal.Header closeButton>
+                <Modal.Title>Add Project</Modal.Title>
+              </Modal.Header>
+              <Modal.Body>
+                <Form.Group controlId="formFile" className="mb-3">
+                  <Form.Label>Default file input example</Form.Label>
+                  <Form.Control type="file" />
+                </Form.Group>
+                <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+                  <Form.Label>Example textarea</Form.Label>
+                  <Form.Control as="textarea" rows={3} />
+                </Form.Group>
+                <Form.Check aria-label="option 1" label="Publish"/>
+              </Modal.Body>
+              <Modal.Footer>
+                <Button variant="secondary" onClick={handleCloseAdd}>
+                  Cancel
+                </Button>
+                <Button variant="primary">Save</Button>
+              </Modal.Footer>
+            </Modal>
+            {/*  */}
+
+            {/* Edit-Project Modal */}
+            <Modal
+              show={showEdit}
+              onHide={handleCloseEdit}
+              backdrop="static"
+              keyboard={false}
+            >
+              <Modal.Header closeButton>
+                <Modal.Title>Edit Project</Modal.Title>
+              </Modal.Header>
+              <Modal.Body>
+                <Form.Group controlId="formFile" className="mb-3">
+                  <Form.Label>Default file input example</Form.Label>
+                  <Form.Control type="file" />
+                </Form.Group>
+                <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+                  <Form.Label>Example textarea</Form.Label>
+                  <Form.Control as="textarea" rows={3} />
+                </Form.Group>
+                <Form.Check aria-label="option 1" label="Publish"/>
+              </Modal.Body>
+              <Modal.Footer>
+                <Button variant="secondary" onClick={handleCloseEdit}>
+                  Cancel
+                </Button>
+                <Button variant="primary">Save</Button>
+              </Modal.Footer>
+            </Modal>
+            {/*  */}
+
+            {/* Delete-Project Modal */}
+            <Modal
+              show={showDelete}
+              onHide={handleCloseDelete}
+              backdrop="static"
+              keyboard={false}
+            >
+              <Modal.Header closeButton>
+                <Modal.Title>Delete Project</Modal.Title>
+              </Modal.Header>
+              <Modal.Body>
+                <p>Are you sure you want to delete this project listing?</p>
+              </Modal.Body>
+              <Modal.Footer>
+                <Button variant="secondary" onClick={handleCloseDelete}>
+                  Cancel
+                </Button>
+                <Button variant="primary">Delete</Button>
+              </Modal.Footer>
+            </Modal>
+            {/*  */}
           </div>
 
         ) : (
