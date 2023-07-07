@@ -1,37 +1,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Pavanam&display=swap');
 
-.lato{
+.lato {
     font-family: 'Lato', sans-serif;
 }
-.pavanam{
+
+.pavanam {
     font-family: 'Pavanam', sans-serif;
 }
 
-hr{
-max-width: 400px;
-}
-
-.bg-img{
+.bg-img {
     width: 100vw;
 }
 
-.section-title{
+.section-title {
     font-family: 'Pavanam', sans-serif;
-    font-size: 35px;
+}
+
+hr {
+    max-width: 30vw;
 }
 
 @media (max-width: 768px) {
-    
+    .section-title {
+        font-size: 25px;
+    }
+
+    hr {
+        max-width: 45vw;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 1000px) {
-    
+    .section-title {
+        font-size: 30px;
+    }
 }
 
 @media (min-width: 1000px) and (max-width: 1200px) {
-    
+    .section-title {
+        font-size: 30px;
+    }
 }
 
 @media (min-width: 1200px) {
-    
+    .section-title {
+        font-size: 35px;
+    }
 }

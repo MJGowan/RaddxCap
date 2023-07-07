@@ -10,12 +10,12 @@ export default function hero() {
       <img src={heroimg} className='bg-img hero-img' />
       <Container className='txt-container'>
         <Row>
-          <Col className='col-6'>
+          <Col className='col-md-7 col-sm-12'>
           <p className='hero-title lato'>RaddxCap Investments</p>
           </Col>
         </Row>
         <Row>
-          <Col className='col-6'>
+          <Col className='col-md-7 col-sm-12'>
           <p className='hero-txt lato'>Real Estate Solutions for Real Investors</p>
           </Col>
         </Row>
