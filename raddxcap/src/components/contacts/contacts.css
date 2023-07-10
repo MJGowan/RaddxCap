@@ -6,10 +6,6 @@
     font-size: 25px;
 }
 
-.logos {
-    margin-right: 15px;
-}
-
 .formContainer {
     background-color: #273237;
     border-radius: 10px;
@@ -36,13 +32,13 @@
     color: white;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 550px) {
     #contacts .bg-img {
-        height: 125vw;
+        height: 80vh;
     }
 
     .titleContainer {
-        margin-top: -115vw;
+        margin-top: -77vh;
     }
 
     .contactInfo {
@@ -56,9 +52,46 @@
     }
 
     .formContainer {
-        margin-top: 25px;
+        margin-top: 5px;
         padding: 20px;
         width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .emailInput {
+        width: 30vw;
+    }
+
+    .messageInput {
+        width: 83vw;
+        height: 100px;
+    }
+
+    .submitBtn {
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: small;
+    }
+}
+
+@media (min-width: 550px) and (max-width: 768px) {
+    #contacts .bg-img {
+        height: 80vh;
+    }
+
+    .titleContainer {
+        margin-top: -77vh;
+    }
+
+    .contactInfo {
+        font-size: 20px;
+    }
+
+    .formContainer {
+        margin-top: 5px;
+        padding: 15px;
+        width: 100%;
+        margin-bottom: 25px;
     }
 
     .emailInput {
@@ -79,27 +112,22 @@
 
 @media (min-width: 768px) and (max-width: 1000px) {
     #contacts .bg-img {
-        height: 90vh;
+        height: 95vh;
     }
 
     .titleContainer {
-        margin-top: -88vh;
+        margin-top: -93vh;
     }
 
     .contactInfo {
         font-size: 20px;
     }
 
-    .logos {
-        margin-left: 15px;
-        margin-right: 0;
-        width: 40px;
-    }
-
     .formContainer {
         margin-top: 25px;
         padding: 20px;
         width: 100%;
+        margin-bottom: 20px;
     }
 
     .emailInput {
@@ -113,8 +141,30 @@
 }
 
 @media (min-width: 1000px) and (max-width: 1200px) {
+    #contacts .bg-img {
+        height: 80vh;
+    }
+
     .titleContainer {
-        margin-top: -65vh;
+        margin-top: -75vh;
+    }
+
+    .contactInfo {
+        font-size: 20px;
+    }
+
+    .formContainer {
+        padding: 20px;
+        width: 45%;
+    }
+
+    .emailInput {
+        width: 20vw;
+    }
+
+    .messageInput {
+        width: 37vw;
+        height: 125px;
     }
 }
 
@@ -125,10 +175,6 @@
 
     .contactInfo {
         font-size: 25px;
-    }
-
-    .logos {
-        margin-right: 15px;
     }
 
     .formContainer {
