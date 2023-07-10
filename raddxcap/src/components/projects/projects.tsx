@@ -6,9 +6,16 @@ import AddIcon from '@mui/icons-material/Add';
 import DeleteOutlineOutlinedIcon from '@mui/icons-material/DeleteOutlineOutlined';
 import EditOutlinedIcon from '@mui/icons-material/EditOutlined';
 import './projects.css';
+import { checkToken } from '../../Services/DataService';
 
 export default function Projects() {
-  const [adminOn, setAdminOn] = useState(true);
+  const [adminOn, setAdminOn] = useState(false);
+
+  useEffect(() => {
+    if(checkToken()){
+      setAdminOn(true);
+    }
+  })
 
 
   const [showAdd, setShowAdd] = useState(false);

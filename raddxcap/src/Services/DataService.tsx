@@ -1,22 +1,5 @@
 let userData = {};
 
-async function createAccount(createdUser: string){
-    const res = await fetch('https://raddxcapbackend.azurewebsites.net/user/createAccount', {
-        method: "POST",
-        headers: {
-            'Content-Type':"application/json"
-        },
-        body:JSON.stringify(createdUser)
-    });
-    if(!res.ok){
-        const message = `An Error has Occurred ${res.status}`;
-        throw new Error(message);
-    }
-    let data = await res.json();
-    console.log(data);
-    return data;
-}
-
 async function login (loginUser: object) {
     const res = await fetch('https://raddxcapbackend.azurewebsites.net/user/Login', {
         method: "POST",
@@ -102,4 +85,4 @@ async function updateItem(item: any){
 }
 
 
-export { createAccount, login, getLoggedInUserData, checkToken, loggedInData, addItem, getAllItems, getPublishedItems, updateItem }
+export { login, getLoggedInUserData, checkToken, loggedInData, addItem, getAllItems, getPublishedItems, updateItem }
