@@ -84,5 +84,22 @@ async function updateItem(item: any){
     return data;
 }
 
+async function deleteItem(item: any){
+    const res = await fetch('https://raddxcapbackend.azurewebsites.net/item/DeleteItem', {
+        method: "POST",
+        headers: {
+            'Content-Type':"application/json"
+        },
+        body:JSON.stringify(item)
+    });
+    if(!res.ok){
+        const message = `An Error has Occurred ${res.status}`;
+        throw new Error(message);
+    }
+    let data = await res.json();
+    console.log(data);
+    return data;
+}
 
-export { login, getLoggedInUserData, checkToken, loggedInData, addItem, getAllItems, getPublishedItems, updateItem }
+
+export { login, getLoggedInUserData, checkToken, loggedInData, addItem, getAllItems, getPublishedItems, updateItem, deleteItem }

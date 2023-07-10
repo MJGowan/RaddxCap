@@ -6,16 +6,28 @@ import AddIcon from '@mui/icons-material/Add';
 import DeleteOutlineOutlinedIcon from '@mui/icons-material/DeleteOutlineOutlined';
 import EditOutlinedIcon from '@mui/icons-material/EditOutlined';
 import './projects.css';
-import { checkToken } from '../../Services/DataService';
+import { checkToken, addItem, getAllItems, getPublishedItems, updateItem, deleteItem } from '../../Services/DataService';
 
 export default function Projects() {
   const [adminOn, setAdminOn] = useState(false);
 
+  const [itemImage, setItemImage] = useState('');
+  const [itemDesc, setItemDesc] = useState('');
+
   useEffect(() => {
-    if(checkToken()){
+    if (checkToken()) {
       setAdminOn(true);
+    };
+
+    async function getItems() {
+      const items = await getAllItems();
+      setItemImage(items.image!);
+      setItemDesc(items.desc!);
     }
+    getItems();
+
   })
+
 
 
   const [showAdd, setShowAdd] = useState(false);
@@ -73,13 +85,7 @@ export default function Projects() {
     }
   ];
 
-
-  
-// ----Forms----------------------------
-const [itemImage, setItemImage] = useState('');
-const [itemDesc, setItemDesc] = useState('');
-
-// -------------------------------------
+  // -------------------------------------
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const length = properties.length;
