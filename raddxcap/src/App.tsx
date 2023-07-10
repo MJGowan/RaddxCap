@@ -1,25 +1,23 @@
 import React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Nav from './components/navv/navv';
-import Hero from './components/hero/hero';
-import AboutMe from './components/aboutme/aboutme';
-import Mid from './components/mid/mid';
-import Projects from './components/projects/projects';
-import Contacts from './components/contacts/contacts';
-import Footer from './components/footer/footer';
+import Main from './pages/main';
+import Login from './pages/login/login';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <div>
-      <Nav/>
-      <Hero/>
-      <AboutMe/>
-      <Mid/>
-      <Projects/>
-      <Contacts/>
-      <Footer/>
-    </div>
+    <BrowserRouter>
+      <div>
+
+      </div>
+
+    <Routes>
+      <Route path='/' element={<Main/>}/>
+      <Route path='/Login' element={<Login/>}/>
+    </Routes>
+
+    </BrowserRouter>
   );
 }
 

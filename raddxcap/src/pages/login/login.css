@@ -1,0 +1,144 @@
+#admin {
+    background-image: url("../../assets/Mid.png");
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    background-size: cover;
+}
+
+.admin-box {
+    background-color: #283542;
+    color: white;
+    padding: 25px;
+    border-radius: 10px;
+    margin-top: 10%;
+    width: 60vw;
+}
+
+#admin .section-title {
+    text-align: center;
+}
+
+#admin hr {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35vw;
+}
+
+.inputs {
+    border-radius: 5px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.labels {
+    margin-left: 2%;
+}
+
+#admin .submitBtn {
+    margin-right: 3%;
+}
+
+@media (max-width: 768px) {
+    .admin-box {
+        padding: 25px;
+        margin-top: 15%;
+        width: 80vw;
+    }
+
+    #admin hr {
+        max-width: 50vw;
+    }
+
+    .inputs {
+        max-width: 90%;
+        border-radius: 5px;
+    }
+
+    .labels {
+        margin-left: 2%;
+    }
+    
+    #admin .submitBtn {
+        margin-right: 3%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1000px) {
+    .admin-box {
+        padding: 25px;
+        margin-top: 10%;
+        width: 60vw;
+    }
+
+    #admin hr {
+        width: 35vw;
+    }
+
+    .inputs {
+        max-width: 90%;
+        border-radius: 5px;
+    }
+
+    .labels {
+        margin-left: 2%;
+    }
+    
+    #admin .submitBtn {
+        margin-right: 3%;
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+    .admin-box {
+        padding: 25px;
+        margin-top: 10%;
+        width: 60vw;
+    }
+
+    #admin hr {
+        width: 35vw;
+    }
+
+    .inputs {
+        max-width: 90%;
+        border-radius: 5px;
+    }
+
+    .labels {
+        margin-left: 2%;
+    }
+    
+    #admin .submitBtn {
+        margin-right: 3%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .admin-box {
+        padding: 25px;
+        margin-top: 10%;
+        width: 60vw;
+    }
+
+    #admin hr {
+        width: 35vw;
+    }
+
+    .inputs {
+        max-width: 90%;
+        border-radius: 5px;
+    }
+
+    .labels {
+        margin-left: 2%;
+    }
+    
+    #admin .submitBtn {
+        margin-right: 3%;
+    }
+}

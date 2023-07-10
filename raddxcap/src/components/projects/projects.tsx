@@ -66,6 +66,14 @@ export default function Projects() {
     }
   ];
 
+
+  
+// ----Forms----------------------------
+const [itemImage, setItemImage] = useState('');
+const [itemDesc, setItemDesc] = useState('');
+
+// -------------------------------------
+
   const [currentIndex, setCurrentIndex] = useState(0);
   const length = properties.length;
   const carouselInfiniteScroll = () => {
@@ -89,7 +97,7 @@ export default function Projects() {
 
 
   return (
-    <Container className='projects'>
+    <Container className='projects' id='projects'>
       {
         adminOn ? (
           <div>

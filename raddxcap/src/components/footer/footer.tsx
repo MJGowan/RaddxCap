@@ -1,8 +1,14 @@
 import React from 'react';
 import './footer.css';
 import {Container, Row, Col} from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 
-export default function footer() {
+export default function Footer() {
+  let navigate = useNavigate();
+  const admin = () => {
+    navigate("/Login");
+  }
+
   const fbLogo = require('../../assets/facebook-light.png');
   const twLogo = require('../../assets/twitter-light.png');
   const liLogo = require('../../assets/linkedin-light.png');
@@ -19,7 +25,7 @@ export default function footer() {
               <p>RaddCapitalBecky@gmail.com</p>
           </Col>
           <Col >
-            <p className='d-flex justify-content-end'>Admin</p>
+            <p className='d-flex justify-content-end'><span onClick={admin}>Admin</span></p>
             <div className='d-flex justify-content-end'>
               <img src={fbLogo} className='logos' />
               <img src={twLogo} className='logos' />
