@@ -1,47 +1,147 @@
-.contactBgImg{
-    width: 100vw;
-}
-
-
-.titleContainer{
+.titleContainer {
     margin-top: -75vh;
 }
 
-.contactInfo{
+.contactInfo {
     font-size: 25px;
 }
 
-.logos{
-margin-right: 15px;
+.logos {
+    margin-right: 15px;
 }
 
-.formContainer{
-    padding: 30px;
+.formContainer {
     background-color: #273237;
     border-radius: 10px;
     color: white;
-    width: 45%;
 }
 
-.emailInput{
-border-radius: 3px;
-border-color: transparent;
-width: 15vw;
-margin-left: 5px;
+.emailInput {
+    border-radius: 3px;
+    border-color: transparent;
+    margin-left: 5px;
 }
 
-.messageInput{
-border-radius: 5px;
-width: 31vw;
-height: 125px;
-margin-left: 5px;
+.messageInput {
+    border-radius: 5px;
+    margin-left: 5px;
 }
 
-.submitBtn{
-border-radius: 5px;
-background-color: #63747D;
-border-color: #63747D;
-padding-left: 10px;
-padding-right: 10px;
-color: white;
+.submitBtn {
+    border-radius: 5px;
+    background-color: #63747D;
+    border-color: #63747D;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    #contacts .bg-img {
+        height: 125vw;
+    }
+
+    .titleContainer {
+        margin-top: -115vw;
+    }
+
+    .contactInfo {
+        font-size: 20px;
+    }
+
+    .logos {
+        margin-left: 10px;
+        margin-right: 0;
+        width: 25px;
+    }
+
+    .formContainer {
+        margin-top: 25px;
+        padding: 20px;
+        width: 100%;
+    }
+
+    .emailInput {
+        width: 30vw;
+    }
+
+    .messageInput {
+        width: 83vw;
+        height: 100px;
+    }
+
+    .submitBtn {
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: small;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1000px) {
+    #contacts .bg-img {
+        height: 90vh;
+    }
+
+    .titleContainer {
+        margin-top: -88vh;
+    }
+
+    .contactInfo {
+        font-size: 20px;
+    }
+
+    .logos {
+        margin-left: 15px;
+        margin-right: 0;
+        width: 40px;
+    }
+
+    .formContainer {
+        margin-top: 25px;
+        padding: 20px;
+        width: 100%;
+    }
+
+    .emailInput {
+        width: 30vw;
+    }
+
+    .messageInput {
+        width: 85vw;
+        height: 125px;
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+    .titleContainer {
+        margin-top: -65vh;
+    }
+}
+
+@media (min-width: 1200px) {
+    .titleContainer {
+        margin-top: -75vh;
+    }
+
+    .contactInfo {
+        font-size: 25px;
+    }
+
+    .logos {
+        margin-right: 15px;
+    }
+
+    .formContainer {
+        padding: 30px;
+        width: 45%;
+    }
+
+    .emailInput {
+        width: 15vw;
+    }
+
+    .messageInput {
+        width: 31vw;
+        height: 125px;
+    }
 }

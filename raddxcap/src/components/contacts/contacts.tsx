@@ -63,8 +63,8 @@ export default function contacts() {
   const inLogo = require('../../assets/insta-dark.png');
 
   return (
-    <div>
-      <img src={bgImg} className='contactBgImg' />
+    <div id="contacts">
+      <img src={bgImg} className='bg-img' />
       <Container>
         <div className='titleContainer'>
           <p className='section-title'>Contacts</p>
