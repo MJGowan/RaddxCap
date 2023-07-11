@@ -15,9 +15,7 @@ export default function Login() {
       username,
       password
     }
-    console.log(userData);
     let token = await login(userData);
-    console.log(token);
     if (token != null) {
       localStorage.setItem("Token", token);
       await getLoggedInUserData(username);

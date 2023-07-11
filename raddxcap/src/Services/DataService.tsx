@@ -13,7 +13,6 @@ async function login (loginUser: object) {
         throw new Error(message);
     }
     let data = await res.json();
-    console.log(data);
     return data;
 }
 
@@ -21,7 +20,6 @@ async function getLoggedInUserData(username: string){
     let res = await fetch(`https://raddxcapbackend.azurewebsites.net/user/GetUserByUsername/${username}`);
     let data = await res.json();
     userData = data;
-    console.log(userData);
     return userData;
 }
 
@@ -51,7 +49,6 @@ async function addItem(item: any){
         throw new Error(message);
     }
     let data = await res.json();
-    console.log(data);
     return data;
 }
 
@@ -80,7 +77,6 @@ async function updateItem(item: any){
         throw new Error(message);
     }
     let data = await res.json();
-    console.log(data);
     return data;
 }
 
@@ -97,7 +93,6 @@ async function deleteItem(item: any){
         throw new Error(message);
     }
     let data = await res.json();
-    console.log(data);
     return data;
 }
 
