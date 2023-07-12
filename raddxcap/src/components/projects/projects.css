@@ -74,35 +74,28 @@
 .replacement-card{
   background-color: #273237;
   padding: 25px;
+  width: 350px;
+  max-height: 475px;
+  margin-top: 1.5vh;
+  margin-right: 1vw;
+}
+
+.replacement-card-two{
+  background-color: #273237;
+  padding: 25px;
   max-width: 350px;
-  max-height: 350px;
+  max-height: 475px;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 10vh;
-  margin-bottom: 10vh;
+}
+
+.rp-card-text{
   text-align: center;
-}
-
-/* ADMIN */
-
-.lightIcons {
-  color: white;
-}
-
-.innerCarAdmin {
   display: flex;
-  flex-wrap: wrap;
-}
-
-.carItemAdmin {
-  padding: 5px;
-}
-
-.carBodyAdmin {
-  padding: 15px;
-  padding-bottom: 20px;
-  position: absolute;
-  margin-top: 215px;
+  margin: auto;
+  font-weight: bold;
 }
 
 /* MEDIA QUERIES */
@@ -131,16 +124,10 @@
     margin-left: -20px
   }
 
-     /* ADMIN */
+  .rp-card-text{
+    font-size:medium;
+  }
 
-     .innerCarAdmin {
-      padding-bottom: 5%;
-    }
-  
-    .carItemAdmin {
-      width: 300px;
-      padding: 5px;
-    }
 }
 
 @media (min-width: 768px) and (max-width: 1000px) {
@@ -163,16 +150,10 @@
     margin-left: 350px;
   }
 
-   /* ADMIN */
-
-   .innerCarAdmin {
-    padding-bottom: 5%;
+  .rp-card-text{
+    font-size:medium;
   }
 
-  .carItemAdmin {
-    width: 300px;
-    padding: 5px;
-  }
 }
 
 
@@ -196,15 +177,8 @@
     margin-left: 700px;
   }
 
-  /* ADMIN */
-
-  .innerCarAdmin {
-    padding-bottom: 5%;
-  }
-
-  .carItemAdmin {
-    width: 300px;
-    padding: 5px;
+  .rp-card-text{
+    font-size:large;
   }
 
 }
@@ -224,15 +198,8 @@
     margin-left: 1000px;
   }
 
-  /* ADMIN */
-
-  .innerCarAdmin {
-    padding-bottom: 5%;
-  }
-
-  .carItemAdmin {
-    width: 350px;
-    padding: 5px;
+  .rp-card-text{
+    font-size:large;
   }
 
 }
