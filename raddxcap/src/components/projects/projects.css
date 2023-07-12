@@ -1,5 +1,5 @@
 #projects {
-  margin-top: 20vh;
+  margin-top: 15vh;
 }
 
 .carCarousel {
@@ -101,6 +101,10 @@
 /* MEDIA QUERIES */
 
 @media (max-width: 768px) {
+  #projects {
+    margin-top: 7vh;
+  }
+
   .carCarousel {
     margin-right: 0px;
     margin-left: -15px;

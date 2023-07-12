@@ -3,36 +3,33 @@
     background-color: #283542;
     color: white;
     padding-left: 10px;
+    padding-right: 10px;
+    width: 101vw;
 }
 
 @media (max-width: 768px) {
     .footerContainer{
         padding-top: 30px;
-        width: 101vw;
-        margin-top: -7vh;
+        width: 104vw;
     }
 }
 
 @media (min-width: 768px) and (max-width: 1000px) {
     .footerContainer{
         padding-top: 25px;
-        width: 101vw;
-        margin-top: -7vh;
+        width: 102vw;
     }
 }
 
 @media (min-width: 1000px) and (max-width: 1200px) {
     .footerContainer{
         padding-top: 30px;
-        width: 101vw;
-        margin-top: 10vh;
+        width: 102vw;
     }
 }
 
 @media (min-width: 1200px) {
     .footerContainer{
         padding-top: 30px;
-        width: 101vw;
-        margin-top: 5vh;
     }
 }

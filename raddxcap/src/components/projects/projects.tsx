@@ -65,13 +65,13 @@ export default function Projects() {
   // -------------------------------------
 
   return (
-    <Container className='projects' id='projects'>
+    <Container id='projects'>
       <div>
         <p className='section-title'>Projects</p>
         <hr className='hrLength' />
         {
           items.length > 0 ? (
-            <div id="carouselExampleControls" className='carCarousel slide mb-5' data-bs-ride="carousel">
+            <div id="carouselExampleControls" className='carCarousel slide' data-bs-ride="carousel">
               <div className='innerCar'>
                 <div className='carets'>
                   <button className='carControlPrev' type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev" onClick={scrollPrev}>

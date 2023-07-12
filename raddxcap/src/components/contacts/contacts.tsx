@@ -56,7 +56,6 @@ function ContactForm() {
 
 
 export default function contacts() {
-  const bgImg = require('../../assets/Contacts.png');
   const fbLogo = require('../../assets/facebook-dark.png');
   const twLogo = require('../../assets/twitter-dark.png');
   const liLogo = require('../../assets/linkedin-dark.png');
@@ -64,9 +63,8 @@ export default function contacts() {
 
   return (
     <div id="contacts">
-      <img src={bgImg} className='bg-img' />
-      <Container>
-        <div className='titleContainer'>
+      <Container className='contact-container'>
+        <div>
           <p className='section-title'>Contacts</p>
           <hr className='hrLength' />
         </div>

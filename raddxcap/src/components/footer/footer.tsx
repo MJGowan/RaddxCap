@@ -15,7 +15,7 @@ export default function Footer() {
   const inLogo = require('../../assets/insta-light.png');
 
   return (
-      <div className='mt-5'>
+      <div>
         <Row className='footerContainer'>
           <Container>
             <Row>

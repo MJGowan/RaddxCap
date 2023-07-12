@@ -1,5 +1,5 @@
 #adminprojects {
-    margin-top: 20vh;
+    margin-top: 15vh;
 }
 
 .carCard {
@@ -59,7 +59,9 @@
 /* MEDIA QUERIES */
 
 @media (max-width: 768px) {
-    /* ADMIN-SPECIFIC */
+    #adminprojects {
+        margin-top: 8vh;
+}
 
     .innerCarAdmin {
         padding-bottom: 5%;
@@ -72,7 +74,9 @@
 }
 
 @media (min-width: 768px) and (max-width: 1000px) {
-    /* ADMIN-SPECIFIC */
+    #adminprojects {
+        margin-top: 15vh;
+}
 
     .innerCarAdmin {
         padding-bottom: 5%;
@@ -86,7 +90,9 @@
 
 
 @media (min-width: 1000px) and (max-width: 1200px) {
-    /* ADMIN-SPECIFIC */
+    #adminprojects {
+        margin-top: 15vh;
+}
 
     .innerCarAdmin {
         padding-bottom: 5%;
@@ -100,7 +106,9 @@
 }
 
 @media (min-width: 1200px) {
-    /* ADMIN-SPECIFIC */
+    #adminprojects {
+        margin-top: 15vh;
+    }
 
     .innerCarAdmin {
         padding-bottom: 5%;

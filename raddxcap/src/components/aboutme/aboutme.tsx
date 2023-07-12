@@ -5,7 +5,7 @@ import './aboutme.css';
 export default function aboutme() {
   return (
     <div>
-      <Container className='aboutMe mb-5' id='about'>
+      <Container id='about'>
       <Row>
         <p className='section-title'>About Me</p>
       </Row>

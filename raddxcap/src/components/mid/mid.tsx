@@ -7,7 +7,6 @@ export default function mid() {
   const becky = require('../../assets/Mom.png');
   return (
     <div id="mid">
-      <img src={bgImg} className='bg-img'/>
       <Container className='mid-items'>
         <Row>
           <Col>

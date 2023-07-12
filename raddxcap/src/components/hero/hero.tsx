@@ -6,8 +6,7 @@ export default function hero() {
   const heroimg = require('../../assets/Hero.png');
 
   return (
-    <div style={{ color: 'white' }} className='mb-5'>
-      <img src={heroimg} className='bg-img hero-img' />
+    <div style={{ color: 'white' }} className='mb-5' id="hero">
       <Container className='txt-container'>
         <Row>
           <Col className='col-md-7 col-xs-12'>

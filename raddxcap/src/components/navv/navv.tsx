@@ -27,9 +27,9 @@ export default function Navv() {
   };
 
   return (
-    <div style={{ width: '100vw' }}>
+    <div style={{ width: '100vw' }} id='navv'>
       <Row>
-        <Navbar className='bg nav' expand="lg" sticky="top">
+        <Navbar className='bg nav'>
           <Container>
             <a href="#home">
               <img src={logo} className='logo-img' />
@@ -40,7 +40,7 @@ export default function Navv() {
               <div>
                 {
                     adminOn ? (
-                      <Nav.Link className='nav-items nav-icon pavanam'><LogoutIcon/></Nav.Link>
+                      <Nav.Link className='nav-items nav-icon pavanam' onClick={logout}><LogoutIcon/></Nav.Link>
                     ) : (
                       <></>
                     )
@@ -54,9 +54,7 @@ export default function Navv() {
                   {
                     adminOn ? (
                       <Nav.Link className='nav-items nav-icon pavanam' onClick={logout}><LogoutIcon/></Nav.Link>
-                    ) : (
-                      <></>
-                    )
+                    ) : null
                   }
                 </div>
               )

@@ -16,11 +16,9 @@ export default function Projects() {
         let allItems = await getAllItems();
         setItems(allItems);
     }
-
     
         AllItems();
     
-
     // -------------------------------------
 
     const [itemId, setItemId] = useState(0);
@@ -134,7 +132,7 @@ export default function Projects() {
             <div>
                 <p className='section-title'>Projects <AddIcon onClick={(e) => handleAdd(e, { itemId: 0, itemDesc: '', itemImage: '', itemUrl: '', itemDeleted: false, itemPublished: false })} /></p>
                 <hr />
-                <div className='col-lg-12 mb-5'>
+                <div className='col-lg-12'>
                     <div className='innerCarAdmin'>
                         {
                             items.length > 0 ? (

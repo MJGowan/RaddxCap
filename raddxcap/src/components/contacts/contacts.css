@@ -1,5 +1,10 @@
-.titleContainer {
-    margin-top: -75vh;
+#contacts {
+    margin-top: 3vh;
+    background-image: url('../../assets/Contacts.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
 }
 
 .contactInfo {
@@ -33,14 +38,6 @@
 }
 
 @media (max-width: 550px) {
-    #contacts .bg-img {
-        height: 80vh;
-    }
-
-    .titleContainer {
-        margin-top: -77vh;
-    }
-
     .contactInfo {
         font-size: 20px;
     }
@@ -54,16 +51,16 @@
     .formContainer {
         margin-top: 5px;
         padding: 20px;
-        width: 100%;
+        width: 90%;
         margin-bottom: 25px;
     }
 
     .emailInput {
-        width: 30vw;
+        width: 60vw;
     }
 
     .messageInput {
-        width: 83vw;
+        width: 85vw;
         height: 100px;
     }
 
@@ -75,14 +72,6 @@
 }
 
 @media (min-width: 550px) and (max-width: 768px) {
-    #contacts .bg-img {
-        height: 80vh;
-    }
-
-    .titleContainer {
-        margin-top: -77vh;
-    }
-
     .contactInfo {
         font-size: 20px;
     }
@@ -111,14 +100,6 @@
 }
 
 @media (min-width: 768px) and (max-width: 1000px) {
-    #contacts .bg-img {
-        height: 95vh;
-    }
-
-    .titleContainer {
-        margin-top: -93vh;
-    }
-
     .contactInfo {
         font-size: 20px;
     }
@@ -141,14 +122,6 @@
 }
 
 @media (min-width: 1000px) and (max-width: 1200px) {
-    #contacts .bg-img {
-        height: 80vh;
-    }
-
-    .titleContainer {
-        margin-top: -75vh;
-    }
-
     .contactInfo {
         font-size: 20px;
     }
@@ -169,10 +142,6 @@
 }
 
 @media (min-width: 1200px) {
-    .titleContainer {
-        margin-top: -75vh;
-    }
-
     .contactInfo {
         font-size: 25px;
     }

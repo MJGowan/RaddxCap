@@ -1,9 +1,9 @@
-.hero-img{
-    margin-top: -10%;
-}
-
-.txt-container{
-    margin-top: -15%;
+#hero{
+    background-image: url('../../assets/Hero.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 35vh;
+    padding-bottom: 5vh;
 }
 
 .hero-title{
@@ -16,10 +16,6 @@
 }
 
 @media (max-width: 500px) {
-    .hero-img{
-        margin-top: -5%;
-    }
-    
     .txt-container{
         margin-top: -30%;
     }
@@ -35,12 +31,8 @@
 }
 
 @media (min-width: 500px) and (max-width: 768px) {
-    .hero-img{
-        margin-top: -5%;
-    }
-    
     .txt-container{
-        margin-top: -30%;
+        margin-top: -10%;
     }
     
     .hero-title{
