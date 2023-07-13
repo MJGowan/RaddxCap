@@ -75,7 +75,7 @@ export default function contacts() {
                 <p>(209) 313-9953</p>
                 <p>RaddCapitalBecky@gmail.com</p>
               </div>
-              <div className='d-none d-lg-block'>
+              <div className='d-none d-lg-block logo-container'>
                 <img src={fbLogo} className='logos' />
                 <img src={twLogo} className='logos' />
                 <img src={liLogo} className='logos' />

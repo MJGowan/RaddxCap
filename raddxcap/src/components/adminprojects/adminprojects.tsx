@@ -16,9 +16,9 @@ export default function Projects() {
         let allItems = await getAllItems();
         setItems(allItems);
     }
-    
-        AllItems();
-    
+
+    AllItems();
+
     // -------------------------------------
 
     const [itemId, setItemId] = useState(0);
@@ -112,6 +112,7 @@ export default function Projects() {
         } else {
             alert('Project Was Not Deleted')
         }
+        setShowDelete(false);
     }
 
     // -------------------------------------
@@ -160,7 +161,7 @@ export default function Projects() {
                                                         </div>
                                                     </div>
                                                 </div>
-                                                
+
                                                 {/* Delete-Project Modal */}
                                                 <Modal
                                                     show={showDelete}

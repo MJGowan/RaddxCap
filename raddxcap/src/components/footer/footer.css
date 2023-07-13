@@ -7,10 +7,40 @@
     width: 101vw;
 }
 
-@media (max-width: 768px) {
+.right-half{
+    text-align: end;
+}
+
+@media (max-width: 414px) {
     .footerContainer{
         padding-top: 30px;
         width: 104vw;
+    }
+    #footer p {
+        font-size: 10px;
+    }
+
+    .right-half{
+        margin-top: -5px;
+    }
+
+    #footer .logos{
+        width: 18px;
+    }
+}
+
+@media (min-width: 414px) and (max-width: 768px) {
+    .footerContainer{
+        padding-top: 25px;
+        width: 104vw;
+    }
+
+    .right-half{
+        margin-top: -5px;
+    }
+
+    #footer .logos{
+        width: 18px;
     }
 }
 
