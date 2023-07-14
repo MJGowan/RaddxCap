@@ -2,6 +2,10 @@ import React, { useState, useEffect } from 'react';
 import './footer.css';
 import { Container, Row, Col } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import InstagramIcon from '@mui/icons-material/Instagram';
 
 export default function Footer() {
   let navigate = useNavigate();
@@ -19,15 +23,8 @@ export default function Footer() {
     }
   });
 
-const fbLogo = require('../../assets/facebook-light.png');
-const twLogo = require('../../assets/twitter-light.png');
-const liLogo = require('../../assets/linkedin-light.png');
-const inLogo = require('../../assets/insta-light.png');
-
 return (
   <div id="footer">
-    <Row className='footerContainer'>
-      <Container>
         <Row>
           <Col>
             <p>Las Vegas, NV 89131</p>
@@ -37,10 +34,10 @@ return (
           <Col className='right-half'>
             <p className='d-flex justify-content-end'><span onClick={admin}>Admin</span></p>
             <div className='d-flex justify-content-end'>
-              <img src={fbLogo} className='logos' />
-              <img src={twLogo} className='logos' />
-              <img src={liLogo} className='logos' />
-              <img src={inLogo} className='logos' />
+                <FacebookIcon className='logos'/>
+                <TwitterIcon className='logos'/>
+                <LinkedInIcon className='logos'/>
+                <InstagramIcon className='logos'/>
             </div>
             <p></p>
             {
@@ -53,8 +50,6 @@ return (
 
           </Col>
         </Row>
-      </Container>
-    </Row>
   </div>
 )
 }

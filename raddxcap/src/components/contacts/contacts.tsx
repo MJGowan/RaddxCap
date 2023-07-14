@@ -2,6 +2,10 @@ import React from 'react';
 import './contacts.css';
 import { Container, Row, Col } from 'react-bootstrap';
 import { useForm, ValidationError } from '@formspree/react';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import InstagramIcon from '@mui/icons-material/Instagram';
 
 function ContactForm() {
   const [state, handleSubmit] = useForm("mwkdeknl");
@@ -54,13 +58,7 @@ function ContactForm() {
 }
 
 
-
 export default function contacts() {
-  const fbLogo = require('../../assets/facebook-dark.png');
-  const twLogo = require('../../assets/twitter-dark.png');
-  const liLogo = require('../../assets/linkedin-dark.png');
-  const inLogo = require('../../assets/insta-dark.png');
-
   return (
     <div id="contacts">
       <Container className='contact-container'>
@@ -76,19 +74,19 @@ export default function contacts() {
                 <p>RaddCapitalBecky@gmail.com</p>
               </div>
               <div className='d-none d-lg-block logo-container'>
-                <img src={fbLogo} className='logos' />
-                <img src={twLogo} className='logos' />
-                <img src={liLogo} className='logos' />
-                <img src={inLogo} className='logos' />
+                <FacebookIcon className='logos'/>
+                <TwitterIcon className='logos'/>
+                <LinkedInIcon className='logos'/>
+                <InstagramIcon className='logos'/>
               </div>
             </Container>
           </Col>
           <Col className='col-md-6 d-lg-none'>
             <div>
-              <img src={fbLogo} className='logos' />
-              <img src={twLogo} className='logos' />
-              <img src={liLogo} className='logos' />
-              <img src={inLogo} className='logos' />
+                <FacebookIcon className='logos'/>
+                <TwitterIcon className='logos'/>
+                <LinkedInIcon className='logos'/>
+                <InstagramIcon className='logos'/>
             </div>
           </Col>
           <Col className='col-lg-6 col-md-12 formContainer'>

@@ -1,20 +1,23 @@
-.footerContainer{
-    position: absolute;
-    background-color: #283542;
+#footer{
+    background-color:#283542;
     color: white;
     padding-left: 10px;
     padding-right: 10px;
-    width: 101vw;
+    width: 100vw;
 }
 
 .right-half{
     text-align: end;
 }
 
+#footer .logos{
+    color: white;
+    font-size: 25px;
+}
+
 @media (max-width: 414px) {
-    .footerContainer{
-        padding-top: 30px;
-        width: 104vw;
+    #footer{
+        padding-top: 15px;
     }
     #footer p {
         font-size: 10px;
@@ -25,14 +28,14 @@
     }
 
     #footer .logos{
-        width: 18px;
+        font-size: 19px;
+        margin-bottom: 1px;
     }
 }
 
 @media (min-width: 414px) and (max-width: 768px) {
-    .footerContainer{
-        padding-top: 25px;
-        width: 104vw;
+    #footer{
+        padding-top: 20px;
     }
 
     .right-half{
@@ -40,26 +43,24 @@
     }
 
     #footer .logos{
-        width: 18px;
+        font-size: 20px;
     }
 }
 
 @media (min-width: 768px) and (max-width: 1000px) {
-    .footerContainer{
-        padding-top: 25px;
-        width: 102vw;
+    #footer{
+        padding-top: 20px;
     }
 }
 
 @media (min-width: 1000px) and (max-width: 1200px) {
-    .footerContainer{
-        padding-top: 30px;
-        width: 102vw;
+    #footer{
+        padding-top: 20px;
     }
 }
 
 @media (min-width: 1200px) {
-    .footerContainer{
-        padding-top: 30px;
+    #footer{
+        padding-top: 20px;
     }
 }

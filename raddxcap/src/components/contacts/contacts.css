@@ -1,6 +1,6 @@
 #contacts {
     margin-top: 3vh;
-    background-image: url('../../assets/Contacts.png');
+    background-image: url('../../assets/contacts-unsplash.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 5vh;
@@ -37,6 +37,10 @@
     color: white;
 }
 
+#contacts .logos{
+    font-size:40px;
+}
+
 .logo-container{
     display: flex;
     flex-direction: row;
@@ -48,9 +52,9 @@
         font-size: 20px;
     }
 
-    .logos {
-        margin-left: 10px;
-        width: 25px;
+    #contacts .logos{
+        font-size:30px;
+        margin-right: -5px;
     }
 
     .formContainer {
