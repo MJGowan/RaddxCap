@@ -1,7 +1,7 @@
 let userData = {};
 
 async function login (loginUser: object) {
-    const res = await fetch('https://raddxcapbackend.azurewebsites.net/user/Login', {
+    const res = await fetch('https://raddxcap-backend.azurewebsites.net/user/Login', {
         method: "POST",
         headers: {
             'Content-Type':"application/json"
@@ -17,7 +17,7 @@ async function login (loginUser: object) {
 }
 
 async function getLoggedInUserData(username: string){
-    let res = await fetch(`https://raddxcapbackend.azurewebsites.net/user/GetUserByUsername/${username}`);
+    let res = await fetch(`https://raddxcap-backend.azurewebsites.net/user/GetUserByUsername/${username}`);
     let data = await res.json();
     userData = data;
     return userData;
@@ -37,7 +37,7 @@ function loggedInData(){
 }
 
 async function addItem(item: any){
-    const res = await fetch('https://raddxcapbackend.azurewebsites.net/item/AddItem', {
+    const res = await fetch('https://raddxcap-backend.azurewebsites.net/item/AddItem', {
         method: "POST",
         headers: {
             'Content-Type':"application/json"
@@ -53,19 +53,19 @@ async function addItem(item: any){
 }
 
 async function getAllItems(){
-    let res = await fetch('https://raddxcapbackend.azurewebsites.net/item/GetAllItems');
+    let res = await fetch('https://raddxcap-backend.azurewebsites.net/item/GetAllItems');
     let data = await res.json();
     return data;
 }
 
 async function getPublishedItems(){
-    let res = await fetch('https://raddxcapbackend.azurewebsites.net/item/GetPublishedItems');
+    let res = await fetch('https://raddxcap-backend.azurewebsites.net/item/GetPublishedItems');
     let data = await res.json();
     return data;
 }
 
 async function updateItem(item: any){
-    const res = await fetch('https://raddxcapbackend.azurewebsites.net/item/UpdateItem', {
+    const res = await fetch('https://raddxcap-backend.azurewebsites.net/item/UpdateItem', {
         method: "POST",
         headers: {
             'Content-Type':"application/json"
@@ -81,7 +81,7 @@ async function updateItem(item: any){
 }
 
 async function deleteItem(item: any){
-    const res = await fetch('https://raddxcapbackend.azurewebsites.net/item/DeleteItem', {
+    const res = await fetch('https://raddxcap-backend.azurewebsites.net/item/DeleteItem', {
         method: "POST",
         headers: {
             'Content-Type':"application/json"
