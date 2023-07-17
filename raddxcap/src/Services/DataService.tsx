@@ -66,7 +66,7 @@ async function getPublishedItems(){
 
 async function updateItem(item: any){
     const res = await fetch('https://raddxcap-backend.azurewebsites.net/item/UpdateItem', {
-        method: "POST",
+        method: "PUT",
         headers: {
             'Content-Type':"application/json"
         },

@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Row, Col, Button, Modal, Form } from 'react-bootstrap';
-import CaretPrev from '@mui/icons-material/ArrowBackIos';
-import CaretNext from '@mui/icons-material/ArrowForwardIos';
 import AddIcon from '@mui/icons-material/Add';
 import DeleteOutlineOutlinedIcon from '@mui/icons-material/DeleteOutlineOutlined';
 import EditOutlinedIcon from '@mui/icons-material/EditOutlined';
@@ -150,17 +148,14 @@ export default function Projects() {
                                                         <img src={item.image} className='d-block w-100 carImg' alt={item.description} />
                                                     </a>
                                                     <div className='carBodyAdmin'>
+                                                        <p className='card-text carText'>{item.description}</p>
+                                                    </div>
+                                                    <div className='carFooter'>
                                                         <Row>
-                                                            <p className='card-text carText'>{item.description}</p>
-                                                        </Row>
-
-                                                        <Row className='w-100 h-100'>
-                                                            <div className='lightIcons'>
+                                                            <Col className='w-100 lightIcons'>
                                                                 <EditOutlinedIcon onClick={(e) => handleEdit(e, item)} />
-                                                            {/* </div>
-                                                            <div> */}
                                                                 <DeleteOutlineOutlinedIcon onClick={handleShowDelete} />
-                                                            </div>
+                                                            </Col>
                                                         </Row>
                                                     </div>
                                                 </div>
@@ -220,7 +215,9 @@ export default function Projects() {
                             <Form.Label>Description</Form.Label>
                             <Form.Control as="textarea" rows={3} onChange={handleDesc} />
                         </Form.Group>
-                        <Form.Check aria-label="Publish" label="Publish" />
+                        <Form.Group>
+                            <Form.Check aria-label="Publish" label="Publish" onChange={handlePublish} />
+                        </Form.Group>
                     </Modal.Body>
                     <Modal.Footer>
                         <Button variant="secondary" onClick={handleClose}>
@@ -254,7 +251,9 @@ export default function Projects() {
                             <Form.Label>Description</Form.Label>
                             <Form.Control as="textarea" rows={3} onChange={handleDesc} />
                         </Form.Group>
-                        <Form.Check aria-label="Publish" label="Publish" onChange={handlePublish} />
+                        <Form.Group>
+                            <Form.Check aria-label="Publish" label="Publish" onChange={handlePublish} />
+                        </Form.Group>
                     </Modal.Body>
                     <Modal.Footer>
                         <Button variant="secondary" onClick={handleClose}>

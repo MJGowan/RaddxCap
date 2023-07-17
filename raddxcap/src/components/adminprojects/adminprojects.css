@@ -1,10 +1,11 @@
 #adminprojects {
     padding-top: 5vh;
+    padding-bottom: 5vh;
 }
 
 .carCard {
     height: 475px;
-    background-color: #273237;
+    background-color: #283542;
 }
 
 .carImgContainer {
@@ -30,8 +31,9 @@
     display: flex;
     justify-content: end;
     align-items: end;
-    padding-bottom: 20px;
-    margin-left: 20px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    margin-top: 0;
 }
 
 .innerCarAdmin {
@@ -45,11 +47,12 @@
 
 .carBodyAdmin {
     padding: 15px;
-    height: 100%;
+    height: 240px;
+    overflow-y: scroll;
 }
 
 .admin-replacement-card {
-    background-color: #273237;
+    background-color: #283542;
     padding: 25px;
     width: 350px;
     max-height: 475px;

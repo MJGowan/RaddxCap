@@ -1,5 +1,6 @@
 #projects {
-  margin-top: 15vh;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
 }
 
 .carCarousel {
@@ -9,7 +10,7 @@
 .innerCar {
   display: flex;
   overflow: hidden;
-  margin-right: auto;
+  overflow-wrap: break-word;
   margin-left: auto;
   margin-right: auto;
 }
@@ -45,7 +46,7 @@
 
 .carCard {
   height: 475px;
-  background-color: #273237;
+  background-color: #283542;
 }
 
 .carImgContainer {
@@ -64,24 +65,16 @@
   padding: 15px;
   padding-bottom: 10px;
   position: absolute;
-  margin-top: 270px;
+  margin-top: 225px;
 }
 
 .carText {
   color: white;
-}
-
-.replacement-card{
-  background-color: #273237;
-  padding: 25px;
-  width: 350px;
-  max-height: 475px;
-  margin-top: 1.5vh;
-  margin-right: 1vw;
+  overflow-x: scroll;
 }
 
 .replacement-card-two{
-  background-color: #273237;
+  background-color: #283542;
   padding: 25px;
   max-width: 350px;
   max-height: 475px;
@@ -95,16 +88,11 @@
   text-align: center;
   display: flex;
   margin: auto;
-  font-weight: bold;
 }
 
 /* MEDIA QUERIES */
 
 @media (max-width: 768px) {
-  #projects {
-    margin-top: 7vh;
-  }
-
   .carCarousel {
     margin-right: 0px;
     margin-left: -15px;

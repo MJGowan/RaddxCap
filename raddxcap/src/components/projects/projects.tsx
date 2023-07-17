@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Container, Row, Col} from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import CaretPrev from '@mui/icons-material/ArrowBackIos';
 import CaretNext from '@mui/icons-material/ArrowForwardIos';
 import './projects.css';
@@ -17,8 +17,6 @@ export default function Projects() {
   useEffect(() => {
     PublishedItems();
   }, [])
-
-  // PublishedItems();
 
   // -------------------------------------
 
@@ -50,8 +48,12 @@ export default function Projects() {
 
   const ReplacementOne = () => {
     return (
-      <div className='replacement-card card'>
-        <p className='rp-card-text carText'>No more project listings at the moment. Check back soon!</p>
+      <div className='carItem replacement-card' style={{ transform: `translate(-${currentIndex * 100}%)` }}>
+          <div className='carCard card'>
+            <div className='carBody'>
+              <p className='rp-card-text carText'>No more project listings at the moment. Check back soon!</p>
+            </div>
+          </div>
       </div>
     )
   }
@@ -72,7 +74,7 @@ export default function Projects() {
         <p className='section-title'>Projects</p>
         <hr className='hrLength' />
         {
-          items.length > 0 ? (
+          length > 0 ? (
             <div id="carouselExampleControls" className='carCarousel slide' data-bs-ride="carousel">
               <div className='innerCar'>
                 <div className='carets'>
@@ -86,30 +88,26 @@ export default function Projects() {
                 {
                   items.map((item, index) => (
                     <div key={index} className='carItem' style={{ transform: `translate(-${currentIndex * 100}%)` }}>
-                      {item.isPublished ? (
-
-                        <div className='carCard card'>
+                      <div className='carCard card'>
                           <a href={item.listingLink} className='carImgContainer'>
                             <img src={item.image} className='d-block w-100 carImg' alt={item.description} />
                           </a>
-                          <div className='carBody'>
+                          <div className='carBody w-100'>
                             <p className='card-text carText'>{item.description}</p>
                           </div>
                         </div>
-                      ) : null
-                      }
                     </div>
                   ))
                 }
                 {
-                  items.length == 1 ? (
+                  length == 1 && window.innerWidth > 1200 ? (
                     <>
-                      <ReplacementOne />
-                      <ReplacementOne />
+                      <ReplacementOne key={length + 1} />
+                      <ReplacementOne key={length + 2} />
                     </>
-                  ) : items.length == 2 ? (
+                  ) : length == 2 || length == 1 && window.innerWidth < 1200 ? (
                     <>
-                      <ReplacementOne />
+                      <ReplacementOne key={length + 1} />
                     </>
                   ) : null
                 }
