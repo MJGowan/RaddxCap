@@ -27,6 +27,11 @@
 
 .lightIcons {
     color: white;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    padding-bottom: 20px;
+    margin-left: 20px;
 }
 
 .innerCarAdmin {
@@ -40,9 +45,7 @@
 
 .carBodyAdmin {
     padding: 15px;
-    padding-bottom: 20px;
-    position: absolute;
-    margin-top: 215px;
+    height: 100%;
 }
 
 .admin-replacement-card {

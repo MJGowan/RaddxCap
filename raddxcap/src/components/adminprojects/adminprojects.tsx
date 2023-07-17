@@ -55,10 +55,11 @@ export default function Projects() {
         setShowDelete(false);
     }
 
-    const handleEdit = (e: any, { description, listingLink, image, isPublished, isDeleted }: any) => {
+    const handleEdit = (e: any, { id, description, listingLink, image, isPublished, isDeleted }: any) => {
         setShowEdit(true);
         setEditItem(true);
 
+        setItemId(id);
         setItemDesc(description);
         setItemImage(image);
         setItemUrl(listingLink);
@@ -152,16 +153,15 @@ export default function Projects() {
                                                         <Row>
                                                             <p className='card-text carText'>{item.description}</p>
                                                         </Row>
-                                                        <div className='lightIcons'>
-                                                            <Row>
-                                                                <Col className='col-1'>
-                                                                    <EditOutlinedIcon onClick={(e) => handleEdit(e, item)} />
-                                                                </Col>
-                                                                <Col className='col-1'>
-                                                                    <DeleteOutlineOutlinedIcon onClick={handleShowDelete} />
-                                                                </Col>
-                                                            </Row>
-                                                        </div>
+
+                                                        <Row className='w-100 h-100'>
+                                                            <div className='lightIcons'>
+                                                                <EditOutlinedIcon onClick={(e) => handleEdit(e, item)} />
+                                                            {/* </div>
+                                                            <div> */}
+                                                                <DeleteOutlineOutlinedIcon onClick={handleShowDelete} />
+                                                            </div>
+                                                        </Row>
                                                     </div>
                                                 </div>
 
