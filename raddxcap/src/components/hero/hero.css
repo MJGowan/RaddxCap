@@ -7,12 +7,14 @@
 }
 
 .hero-title{
-    font-weight: bold;
+    /* font-weight: bold; */
     text-align: center;
+    text-shadow: 3px 2px black;
 }
 
 .hero-txt{
     text-align: center;
+    text-shadow: 3px 2px black;
 }
 
 @media (max-width: 500px) {
@@ -48,6 +50,7 @@
 @media (min-width: 768px) and (max-width: 1000px) {
     .hero-title{
         font-size:35px;
+        margin-top: -15px;
     }
     
     .hero-txt{
@@ -62,6 +65,7 @@
     
     .hero-txt{
         font-size: 20px;
+        margin-top: -15px;
     }
 }
 
@@ -72,5 +76,6 @@
     
     .hero-txt{
         font-size: 25px;
+        margin-top: -15px;
     }
 }

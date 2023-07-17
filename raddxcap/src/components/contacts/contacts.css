@@ -1,5 +1,4 @@
 #contacts {
-    margin-top: 3vh;
     background-image: url('../../assets/contacts-unsplash.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -48,6 +47,11 @@
 }
 
 @media (max-width: 550px) {
+    #contacts {
+        padding-top: 2vh;
+        padding-bottom: 1vh;
+    }
+
     .contactInfo {
         font-size: 20px;
     }

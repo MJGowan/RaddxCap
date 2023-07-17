@@ -16,8 +16,9 @@ export default function Projects() {
         let allItems = await getAllItems();
         setItems(allItems);
     }
-
-    AllItems();
+    useEffect(() => {
+        AllItems();
+    }, [])
 
     // -------------------------------------
 
@@ -95,7 +96,8 @@ export default function Projects() {
         }
 
         if (result) {
-            AllItems();
+            let allItems = await getAllItems();
+            setItems(allItems);
         } else {
             alert(`Project Was Not ${editItem ? 'Updated' : 'Added'}`)
         }
@@ -108,7 +110,8 @@ export default function Projects() {
         item.isDeleted = !item.isDeleted;
         let result = await updateItem(item);
         if (result) {
-            AllItems();
+            let allItems = await getAllItems();
+            setItems(allItems);
         } else {
             alert('Project Was Not Deleted')
         }

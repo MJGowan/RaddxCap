@@ -16,7 +16,9 @@ export default function Projects() {
 
   useEffect(() => {
     PublishedItems();
-  })
+  }, [])
+
+  // PublishedItems();
 
   // -------------------------------------
 
