@@ -39,7 +39,7 @@ export default function Projects() {
 
     const handleDesc = (e: any) => setItemDesc(e.target.value);
     const handleUrl = (e: any) => setItemUrl(e.target.value);
-    const handlePublish = (e: any) => setItemPublished(e.target.value);
+    const handlePublish = () => setItemPublished(!itemPublished);
 
     // -------------------------------------
 
@@ -167,7 +167,7 @@ export default function Projects() {
                                                     backdrop="static"
                                                     keyboard={false}
                                                 >
-                                                    <Modal.Header closeButton>
+                                                    <Modal.Header>
                                                         <Modal.Title>Delete Project</Modal.Title>
                                                     </Modal.Header>
                                                     <Modal.Body>
@@ -199,7 +199,7 @@ export default function Projects() {
                     backdrop="static"
                     keyboard={false}
                 >
-                    <Modal.Header closeButton>
+                    <Modal.Header>
                         <Modal.Title>Add Project</Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
@@ -216,7 +216,7 @@ export default function Projects() {
                             <Form.Control as="textarea" rows={3} onChange={handleDesc} />
                         </Form.Group>
                         <Form.Group>
-                            <Form.Check aria-label="Publish" label="Publish" onChange={handlePublish} />
+                            <Form.Check aria-label="Publish" label="Publish" onChange={handlePublish}/>
                         </Form.Group>
                     </Modal.Body>
                     <Modal.Footer>
@@ -235,7 +235,7 @@ export default function Projects() {
                     backdrop="static"
                     keyboard={false}
                 >
-                    <Modal.Header closeButton>
+                    <Modal.Header>
                         <Modal.Title>Edit Project</Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
@@ -254,6 +254,7 @@ export default function Projects() {
                         <Form.Group>
                             <Form.Check aria-label="Publish" label="Publish" onChange={handlePublish} />
                         </Form.Group>
+                        
                     </Modal.Body>
                     <Modal.Footer>
                         <Button variant="secondary" onClick={handleClose}>
