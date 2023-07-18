@@ -73,7 +73,7 @@
   overflow-x: scroll;
 }
 
-.replacement-card-two{
+.replacement-card-two {
   background-color: #283542;
   padding: 25px;
   max-width: 350px;
@@ -84,15 +84,64 @@
   margin-right: auto;
 }
 
-.rp-card-text{
+.rp-card-text {
   text-align: center;
   display: flex;
   margin: auto;
 }
 
 /* MEDIA QUERIES */
+@media (max-width: 414px) {
 
-@media (max-width: 768px) {
+  
+  .carItem {
+    max-width: 290px;
+    flex: 0 0 100%;
+    display: block;
+    padding: 10px;
+  }
+
+  .innerCar {
+    max-width: 290px;
+  }
+
+  .carControlNext {
+    margin-left: 270px;
+  }
+
+  .carControlPrev {
+    margin-left: -10px;
+  }
+
+  .carControlPrev,
+  .carControlNext {
+    width: 25px !important;
+  }
+
+  .rp-card-text {
+    font-size: medium;
+  }
+
+  .carCard {
+    height: 400px !important;
+  }
+
+  .carImgContainer {
+    max-height: 175px !important;
+  }
+
+  .carImg {
+    height: 175px !important;
+    padding: 15px;
+  }
+
+  .carBody {
+    margin-top: 165px;
+  }
+
+}
+
+@media (min-width: 415px) and (max-width: 768px) {
   .carCarousel {
     margin-right: 0px;
     margin-left: -15px;
@@ -116,34 +165,34 @@
     margin-left: -20px
   }
 
-  .rp-card-text{
-    font-size:medium;
+  .rp-card-text {
+    font-size: medium;
   }
 
 }
 
 @media (min-width: 768px) and (max-width: 1000px) {
   .carCarousel {
-    margin-right: 10vw;
-    margin-left: 17vw;
+    margin-right: 4vw;
+    margin-left: 2vw;
   }
 
   .innerCar {
-    max-width: 350px;
+    max-width: 700px;
   }
 
   .carItem {
-    flex: 0 0 100%;
+    flex: 0 0 50%;
     display: block;
-    padding: 10px;
+    padding: 5px;
   }
 
   .carControlNext {
-    margin-left: 350px;
+    margin-left: 645px;
   }
 
-  .rp-card-text{
-    font-size:medium;
+  .rp-card-text {
+    font-size: large;
   }
 
 }
@@ -169,8 +218,8 @@
     margin-left: 700px;
   }
 
-  .rp-card-text{
-    font-size:large;
+  .rp-card-text {
+    font-size: large;
   }
 
 }
@@ -190,8 +239,8 @@
     margin-left: 1000px;
   }
 
-  .rp-card-text{
-    font-size:large;
+  .rp-card-text {
+    font-size: large;
   }
 
 }
