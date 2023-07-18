@@ -9,7 +9,7 @@ export default function mid() {
       <Container className='mid-items'>
         <Row>
           <Col>
-          <div>
+          <div className='holdBecky'>
             <img src={becky} className='becky'/>
           </div>
           </Col>

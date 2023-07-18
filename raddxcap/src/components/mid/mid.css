@@ -6,6 +6,11 @@
     padding-bottom: 5vh;
 }
 
+.holdBecky{
+    display: flex;
+    justify-content: center;
+}
+
 .becky {
     background-color: #283542;
     border-radius: 5px;
@@ -15,6 +20,8 @@
     background-color: #283542;
     color: white;
     border-radius: 5px;
+    display: flex;
+    justify-content: center;
 }
 
 @media (max-width: 550px) {
@@ -25,7 +32,7 @@
 
     .dark-box-txt {
         padding: 10px;
-        font-size: 14px;
+        font-size: 13px;
         max-height: 50vw;
         overflow-y: scroll;
     } 

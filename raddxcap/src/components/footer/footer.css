@@ -7,7 +7,7 @@
 }
 
 .right-half{
-    text-align: end;
+    padding-right: 20px;
 }
 
 #footer .logos{
@@ -23,13 +23,9 @@
         font-size: 10px;
     }
 
-    .right-half{
-        margin-top: -5px;
-    }
-
     #footer .logos{
         font-size: 19px;
-        margin-bottom: 1px;
+        margin-top: -15px;
     }
 }
 
@@ -38,12 +34,12 @@
         padding-top: 20px;
     }
 
-    .right-half{
-        margin-top: -5px;
-    }
-
     #footer .logos{
         font-size: 20px;
+    }
+
+    #footer .logo-container{
+        margin-top: -5px;
     }
 }
 
@@ -62,5 +58,12 @@
 @media (min-width: 1200px) {
     #footer{
         padding-top: 20px;
+    }
+    #footer .logos{
+        margin-right: 10px;
+    }
+
+    #footer .logo-container{
+        margin-right: -10px;
     }
 }
