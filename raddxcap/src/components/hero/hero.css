@@ -1,9 +1,9 @@
 #hero{
-    background-image: url('../../assets/hero-unsplash.jpg');
+    background-image: url('../../assets/9.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 35vh;
-    padding-bottom: 5vh;
+    padding-top: 30vh;
+    padding-bottom: 10vh;
 }
 
 .hero-title{
@@ -17,9 +17,7 @@
 }
 
 .txt-container{
-    color: rgb(255, 247, 230);
-    border-radius: 5px;
-    box-shadow: 3px 3px 10px #2d2d2d69;
+    color: rgb(255, 255, 255);
     font-weight: bold;
 }
 
