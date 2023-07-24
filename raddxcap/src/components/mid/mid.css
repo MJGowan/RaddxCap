@@ -9,24 +9,25 @@
 .holdBecky{
     display: flex;
     justify-content: center;
+    
 }
 
 .becky {
-    background-color: #283542;
-    border-radius: 5px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px #2d2d2d69;
 }
 
 .dark-box-txt {
-    background-color: #283542;
+    background-color: #283542ef;
     color: white;
     border-radius: 5px;
     display: flex;
     justify-content: center;
+    box-shadow: 3px 3px 10px #2d2d2d69;
 }
 
 @media (max-width: 550px) {
     .becky {
-        padding: 4px;
         height: 50vw;
     }
 
@@ -74,7 +75,6 @@
     }
 
     .becky {
-        padding: 5px;
         height: 35vw;
     }
 
@@ -92,8 +92,7 @@
     }
 
     .becky {
-        padding: 5px;
-        height: 35vw;
+        height: 27vw;
     }
     
     .dark-box-txt {

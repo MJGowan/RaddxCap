@@ -92,8 +92,6 @@
 
 /* MEDIA QUERIES */
 @media (max-width: 414px) {
-
-  
   .carItem {
     max-width: 290px;
     flex: 0 0 100%;
@@ -138,7 +136,6 @@
   .carBody {
     margin-top: 165px;
   }
-
 }
 
 @media (min-width: 415px) and (max-width: 768px) {
@@ -194,7 +191,6 @@
   .rp-card-text {
     font-size: large;
   }
-
 }
 
 
@@ -221,7 +217,6 @@
   .rp-card-text {
     font-size: large;
   }
-
 }
 
 @media (min-width: 1200px) {
@@ -242,5 +237,4 @@
   .rp-card-text {
     font-size: large;
   }
-
 }

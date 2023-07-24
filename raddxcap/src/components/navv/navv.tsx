@@ -5,10 +5,10 @@ import LogoutIcon from '@mui/icons-material/Logout';
 import { checkToken } from '../../Services/DataService';
 
 export default function Navv() {
-  const [adminOn, setAdminOn] = useState(false);
-
   const logo = require('../../assets/Logo.png');
+  const [adminOn, setAdminOn] = useState(false);
   const [width, setWidth] = useState(window.innerWidth);
+  
   useEffect(() => {
     if (checkToken()) {
       setAdminOn(true);
