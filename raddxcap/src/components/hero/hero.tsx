@@ -12,11 +12,6 @@ export default function hero() {
           <p className='hero-title lato'>RaddxCap Investments</p>
           </Col>
         </Row>
-        <Row>
-          <Col className='col-md-7 col-xs-12'>
-          <p className='hero-txt lato'>Real Estate Solutions for Real Investors</p>
-          </Col>
-        </Row>
       </Container>
     </div>
   )

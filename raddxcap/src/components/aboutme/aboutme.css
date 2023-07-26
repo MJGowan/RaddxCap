@@ -1,11 +1,99 @@
-@media (max-width: 768px) {
+#about {
+    padding-top: 2vh;
+    padding-bottom: 3vh;
+}
+
+#about .holdBecky {
+    margin: 10px;
+    max-width: 30%;
+}
+
+.holdTxt {
+    max-width: 67%;
+}
+
+#about .becky {
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px #2d2d2d69;
+    aspect-ratio: 1 / 1;
+    max-height: 30vh;
+}
+
+.about-txt {
+    padding-top: 2vh;
+}
+
+@media (max-width: 414px) {
     #about {
         margin-top: -5vh;
     }
+
+    #about .holdBecky {
+        display: flex;
+        justify-content: center;
+        max-width: 100%;
+    }
+
+    .holdTxt {
+        max-width: 100%;
+    }
+
+    #about .becky {
+        max-height: 23vh;
+    }
+
+    .about-txt {
+        padding-top: 2vh;
+    }
 }
 
-@media (min-width: 768px) and (max-width: 1000px) {}
+@media (min-width: 414px) and (max-width: 768px) {
+    #about {
+        margin-top: -5vh;
+    }
 
-@media (min-width: 1000px) and (max-width: 1200px) {}
+    #about .holdBecky {
+        display: flex;
+        justify-content: center;
+        max-width: 100%;
+    }
 
-@media (min-width: 1200px) {}
+    .holdTxt {
+        max-width: 100%;
+    }
+
+    .about-txt {
+        padding-top: 2vh;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1000px) {
+    #about {
+        padding-top: 0;
+    }
+
+    #about .holdBecky {
+        margin-top: 1vh;
+        margin-bottom: 2vh;
+        justify-content: start;
+    }
+
+    #about .becky {
+        max-height: 28vh;
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+    #about .holdBecky {
+        float: right;
+        margin-top: -1vh;
+        margin-bottom: 2vh;
+    }
+}
+
+@media (min-width: 1200px) {
+    #about .holdBecky {
+        float: right;
+        margin-top: -1vh;
+    }
+}
