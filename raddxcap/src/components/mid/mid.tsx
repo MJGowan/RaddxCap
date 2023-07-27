@@ -3,7 +3,6 @@ import './mid.css';
 import {Container, Row, Col} from 'react-bootstrap';
 
 export default function mid() {
-  const becky = require('../../assets/C4724FB2-.jpg');
   return (
     <div id="mid">
       <Container className='mid-items'>

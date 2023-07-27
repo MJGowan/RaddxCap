@@ -3,12 +3,11 @@ import { Container, Row, Col } from 'react-bootstrap';
 import './aboutme.css';
 
 export default function aboutme() {
-  const becky = require('../../assets/C4724FB2-.jpg');
   const mom = require('../../assets/mom.png');
   return (
     <div>
       <Container id='about'>
-        <p className='section-title'>About Me</p>
+        <p className='section-title'>About Us</p>
         <hr />
         <Row>
 

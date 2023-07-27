@@ -25,6 +25,7 @@ body{
 
 hr {
     max-width: 30vw;
+    margin-top: -23px !important;
 }
 
 .logos{
