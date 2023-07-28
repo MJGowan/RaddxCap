@@ -100,12 +100,12 @@ export default function Projects() {
                   ))
                 }
                 {
-                  length == 1 && window.innerWidth > 1200 ? (
+                  length === 1 && window.innerWidth > 1200 ? (
                     <>
                       <ReplacementOne key={length + 1} />
                       <ReplacementOne key={length + 2} />
                     </>
-                  ) : length == 2 || length == 1 && window.innerWidth < 1200 ? (
+                  ) : (length === 2) || (length == 1 && window.innerWidth < 1200) ? (
                     <>
                       <ReplacementOne key={length + 1} />
                     </>
